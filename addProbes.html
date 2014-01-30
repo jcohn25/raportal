@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="tools/css/dropkick.css" type="text/css">
+<script type="text/javascript" src="tools/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="tools/js/jquery.tinyscrollbar.js"></script>
+<script src="tools/js/jquery.dropkick-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="tools/js/jquery-ui-1.8.18.custom.min.js"></script>
+<link type="text/css" href="tools/css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+<link type="text/css" href="tools/css/scrollbar.css" rel="stylesheet" />
+<link type="text/css" href="tools/css/overlays.css" rel="stylesheet" />	
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+				
+		$('#scrollbar1').tinyscrollbar();
+		
+		$('#scrollbarshort').tinyscrollbar();
+		
+		$('#scrollbarfarms').tinyscrollbar();
+
+		$('#scrollbarpp').tinyscrollbar();
+		
+		$('#scrollbarvip').tinyscrollbar();
+
+
+		
+	});
+</script>	
+		
+
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+      $('.default').dropkick();
+
+      $('.black').dropkick({
+        theme : 'black'
+      });
+
+      $('.change').dropkick({
+        change: function (value, label) {
+          alert('You picked: ' + label + ':' + value);
+        }
+      });
+
+      $('.existing_event').dropkick({
+        change: function () {
+          $(this).change();
+        }
+      });
+
+      $('.custom_theme').dropkick({
+        theme: 'black',
+        change: function (value, label) {
+          $(this).dropkick('theme', value);
+        }
+      });
+
+      $('.dk_container').first().focus();
+    });
+  </script>
+
+
+<script type="text/javascript">
+			$(function(){
+
+				
+				// Tabs
+				$('#tabs').tabs();
+	
+
+				
+				
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20 
+				});
+				
+				
+				
+			});
+		</script>
+        
+
+
+</head>
+
+<body>
+<div align="center">
+  <div id="overlayContainer"> 
+    <div id="overlayHeaderLoadBalancers">
+			<div class="subHeadContent">Network Name Goes Here <span class="networkEdits"><a href="#">Edit Network Name</a></span><br />
+	  <span class="subHeadContentUnbold">Network description goes here and can continue all the way to at least here if needed </span><span class="networkEdits"><a href="#">Edit Network Description</a></span></div>
+   	</div>
+    
+<img src="images/OverlayBlueLine.jpg" />                            
+
+
+			<div id="overlayNetworkTopContent">
+            
+            		<div class="tabHeader">
+		Add Probes
+		  <div class="tabHeaderButton"><a href="#"><img src="images/buttonBackToLoadBalancers.png" alt="Add Server Farm" border="0" /></a></div>
+        </div>
+				        
+       <div class="singleLineEntryShort"> 
+            	<div class="singleLineEntrySegmentFormText" style="width:35px">
+                Name
+                </div>
+        		<div class="singleLineEntrySegment" style="width:230px">  
+           	      <input name="ruleName" type="text" class="form-text3" value="Insert Probe Name Here" maxlength="55" />      
+                </div>
+                <div class="singleLineEntrySegmentFormText" style="width:30px">
+                Type 
+                </div>
+        		<div class="singleLineEntrySegment" style="width:135px">  
+           	      <select name="probetype" class="default" tabindex="7">
+					 <option value="">probe type here</option>
+					 <option value="Any">Any</option>
+          										
+			      </select>      	     
+                </div>
+        		<div class="singleLineEntrySegmentFormText" style="width:40px">
+                Method 
+                </div>
+        		<div class="singleLineEntrySegment" style="width:120px">  
+               	   <select name="probemethod" class="default" tabindex="7">
+					 <option value="">probe method</option>
+					 <option value="Any">Any</option>
+          										
+				   </select>      	     
+                </div>
+           </div>
+           
+                  <div class="singleLineEntryShort"> 
+            	<div class="singleLineEntrySegmentFormText" style="width:35px">
+                Url
+                </div>
+        		<div class="singleLineEntrySegment" style="width:230px">  
+               	   <input name="ruleName" type="text" class="form-text3" value="Insert Url Here" maxlength="55" />      
+                </div>
+                <div class="singleLineEntrySegmentFormText" style="width:30px">
+                Port 
+                </div>
+        		<div class="singleLineEntrySegment" style="width:120px">  
+               	   <select name="probeport" class="default" tabindex="7">
+					 <option value="">port 12</option>
+					 <option value="Any">port 13</option>
+          										
+				   </select>      	     
+                </div>
+           </div>
+           
+           <div class="singleLineEntryShort"> 
+            	<div class="singleLineEntrySegmentFormText" style="width:95px">
+                Probe Interval
+                </div>
+        		<div class="singleLineEntrySegment" style="width:100px">  
+               	   <select name="probeinterval" class="default" tabindex="7">
+					 <option value="">value</option>
+					 <option value="Any">value2</option>
+          										
+				   </select>      	     
+                </div>
+                <div class="singleLineEntrySegmentFormText" style="width:170px">
+                Accepted Status Code Range 
+                </div>
+        		<div class="singleLineEntrySegment" style="width:80px">  
+               	   <select name="proberange1" class="default" tabindex="7">
+					 <option value="">value</option>
+					 <option value="Any">value3</option>
+          										
+				   </select>      	     
+                </div>
+                
+                <div class="singleLineEntrySegmentFormText" style="width:20px">
+                to
+                </div>
+        		<div class="singleLineEntrySegment" style="width:80px">  
+               	   <select name="proberange2" class="default" tabindex="7">
+					 <option value="">value</option>
+					 <option value="Any">value2</option>
+          										
+				   </select>      	     
+                </div>
+           </div>
+           
+         <div class="singleLineEntryShort"> 
+            	<div class="singleLineEntrySegmentFormText" style="width:110px">
+                Content to Match
+                </div>
+        		<div class="singleLineEntrySegment" style="width:300px">  
+               	   <textarea name="ruleName" cols="80" rows="2" class="form-text2"></textarea> 
+                </div>
+           </div>
+           <div style="padding-bottom:25px;"></div>
+         <div class="singleLineEntryShort"> 
+            	<div class="singleLineEntrySegmentFormText" style="width:110px">
+                Request Timeout
+                </div>
+        		<div class="singleLineEntrySegment" style="width:100px">  
+               	   <select name="probetimeout" class="default" tabindex="7">
+					 <option value="">value</option>
+					 <option value="Any">value2</option>
+          										
+				   </select>                     
+                </div>
+					<div class="singleLineEntrySegmentFormText" style="width:140px">
+                Failed Probe Interval
+                </div>
+        		<div class="singleLineEntrySegment" style="width:100px">  
+               	   <select name="probeFailInterval" class="default" tabindex="7">
+					 <option value="">value</option>
+					 <option value="Any">value2</option>
+          										
+				   </select>                     
+                </div>           </div>
+           
+         <div class="singleLineEntryShort"> 
+            	
+            	<div class="singleLineEntrySegmentFormText" style="width:330px">
+                Number of Error Responses to Disable a Server
+                </div>
+        		<div class="singleLineEntrySegment" style="width:100px">  
+           	      <select name="probeErrorResponses" class="default" tabindex="7">
+					 <option value="">value</option>
+					 <option value="Any">value2</option>
+          										
+			      </select>                     
+                </div>           </div>
+
+   
+         <div class="singleLineEntryShort"> 
+         
+         <div class="singleLineEntrySegmentFormText" style="width:330px">
+                Number of Succesful Responses to Re-enable a Server
+                </div>
+        		<div class="singleLineEntrySegment" style="width:100px">  
+           	      <select name="probeSuccesfulResponses" class="default" tabindex="7">
+					 <option value="">value</option>
+					 <option value="Any">value2</option>
+          										
+			      </select>                     
+                </div>          
+
+           </div>
+
+          
+          <div style="padding-bottom:10px"></div>
+               <div id="formSubmitContainer">
+				 <a href="#"><img src="images/buttonApplyProbe.png" alt="Apply Probe" width="140" height="32" border="0" /></a>
+                 <a href="#"><img src="images/cancelrule.png" alt="cancel" width="140" height="32" border="0" /></a> </div> 
+           
+        
+  </div><!--end overlay container -->
+</div>
+</div>
+</body>
+</html>

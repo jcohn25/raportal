@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Root Axcess - Welcome</title>
+
+<link type="text/css" href="tools/css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+  <link rel="stylesheet" href="tools/css/dropkick.css" type="text/css">
+<link rel="stylesheet" href="tools/css/jquery.superbox.css" type="text/css" media="all" />
+<link rel="stylesheet" href="tools/css/main.css" type="text/css" media="all" />
+
+
+
+<script type="text/javascript" src="tools/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="tools/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="tools/js/jquery.nestedAccordion.js"></script>
+<script src="tools/js/jquery.dropkick-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="tools/js/jquery-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="tools/js/jquery.superbox-min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+      $('.default').dropkick();
+
+      $('.black').dropkick({
+        theme : 'black'
+      });
+
+      $('.change').dropkick({
+        change: function (value, label) {
+          alert('You picked: ' + label + ':' + value);
+        }
+      });
+
+      $('.existing_event').dropkick({
+        change: function () {
+          $(this).change();
+        }
+      });
+
+      $('.custom_theme').dropkick({
+        theme: 'black',
+        change: function (value, label) {
+          $(this).dropkick('theme', value);
+        }
+      });
+
+      $('.dk_container').first().focus();
+    });
+  </script>
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$("html").addClass("js");
+$.fn.accordion.defaults.container = false; 
+$(function() {
+  $("#acc3").accordion({initShow : "#current"});
+  $("#acc1").accordion({
+      el: ".h", 
+      head: "h4, h5", 
+      next: "div", 
+      initShow : "div.outer:eq(1)"
+  });
+  $("#acc2").accordion({
+      obj: "div", 
+      wrapper: "div", 
+      el: ".h", 
+      head: "h4, h5", 
+      next: "div", 
+      showMethod: "slideFadeDown",
+      hideMethod: "slideFadeUp",
+      initShow : "div.shown"
+    });
+  $("html").removeClass("js");
+});
+//--><!]]>
+</script>
+<!--<![endif]-->
+		
+<script type="text/javascript">
+			$(function(){
+
+				
+				// Tabs
+				$('#tabs').tabs();
+	
+
+				
+				
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20 
+				});
+				
+				
+				
+			});
+		</script>
+        
+        <script type="text/javascript">
+
+        
+$(function(){
+	$.superbox();
+});
+	</script>
+
+
+</head>
+
+<body>
+
+<div id="pageContent"> 
+  <div id="headerContainer">
+    	<div id="headerLogoContainer">
+         <img src="images/rootAxcessLogo.gif" alt="Root Axcess, Enterprise Cloud Solutions" />        </div>
+       	  <div id="headerNavigationContainer">
+          		<div id="mainNav"> 
+                	<ul>
+                    <li class="special">Home</li>
+                    <li><a href="clouds.html">Clouds</a></li>
+                    <li><a href="files.html">Files</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="https://admin.rootaxcesscloud.com/cloudui/app/support.htm" target="_blank">Support</a></li>
+                    </ul>
+                </div> 
+          </div>
+  </div>
+<div id="subHeaderContainer"> 
+           <div class="crumbTrailContainer"><a href="#">Root Axcess Home</a> • <a href="#">Welcome</a><a href="#"></a></div>
+      <div class="loginContainer">hi there i'm a login</div>
+  </div>
+
+	
+<div id="welcomeHeader"> 
+    	<div class="content"><img src="images/rootaccesWelcomeTitle.png" alt="Cloud" width="300" height="120" /><br />
+    If you are here for the first time we have prepared a short introduction to enable you to start building your cloud environment. It is a very simple three step process that we call DBA (Deploy, Build, Access). </div>
+        
+        <div class="videoContainer">
+         <iframe width="480" height="270" src="http://www.youtube.com/embed/5m3E0yDGLMs" frameborder="0" allowfullscreen></iframe>
+		</div>
+  </div>
+<!--closes network header -->
+    
+    
+    
+  <div id="welcomeSteps">
+  		<div class="singleStep">
+        <div class="singleStepImage"><img src="images/welcomeStep1Background.jpg" alt="Step 1 Deploy!" /></div>
+        	<div class="description"> 
+           	  <span class="descriptionDark">Deploy</span> a New Network         
+           	  		<div class="bulletPoint">  
+                    	Select the CLOUDS tab from the menu above. Once in this section, you will see
+    					a list of all of the Networks that you have deployed. (Note: If you have not yet 
+    					deployed a network, the list will be empty.)
+    				</div>
+           	  		<div class="bulletPoint">  
+                    	Click the "Deploy Network" link towards the top right of the main page area.
+    				</div> 
+           	  		<div class="bulletPoint">  
+                    	Provide a name and a description for your new network.</div>
+           	  		<div class="bulletPoint">  
+                    	Click the &quot;Deploy&quot; button. It's that easy.</div>  
+   	  		  
+                    
+                    
+        	</div>
+   	    </div>
+        
+  		<div class="singleStep">
+        <div class="singleStepImage"><img src="images/welcomeStep2Background.jpg" alt="Step 1 Deploy!" /></div>
+        	<div class="description"> 
+           	  <span class="descriptionDark">Build</span> Your Servers         
+           	  		<div class="bulletPoint">  
+                    	    To build a new server, simply click on the image that you want to deploy.
+    				</div>
+           	  		<div class="bulletPoint">  
+                    	 Provide a server name and an optional description for your new server.
+    				</div> 
+           	  		<div class="bulletPoint">  
+                    	Select the network in which to deploy this server.</div>
+           	  		<div class="bulletPoint">  
+                    	Enter the root password for the primary login for this server.</div>  
+                        <div class="bulletPoint">  
+                    	Click "Deploy" your server will be automatically started 
+    when deployment completes.</div>  
+    
+    
+                       
+   	  		  
+                    
+                    
+        	</div>
+   	    </div>
+        
+          		<div class="singleStep">
+        <div class="singleStepImage"><img src="images/welcomeStep3Background.jpg" alt="Step 1 Deploy!" /></div>
+        	<div class="description"> 
+           	  <span class="descriptionDark">Access</span> Your Servers         
+           	  		<div class="bulletPoint">Click the relevant &quot;VPN&quot; link in the right hand menu.<br />
+   	  		  </div>
+           	  		<div class="bulletPoint">Provide your username and password in the Cisco VPN login window.</div> 
+           	  		<div class="bulletPoint">The Cisco VPN client will launch. You now have access to your servers <br />
+via the private network. It's that easy.</div>
+           	  		</div>
+          		</div>
+        
+
+</div>
+	
+
+
+</div>
+
+</body>
+</html>

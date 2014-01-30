@@ -1,0 +1,1772 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+*
+{
+    margin:0;
+    padding:0;
+}
+
+.group:before, .group:after {
+    content:"";
+    display:table;
+}
+
+.group:after {
+    clear:both;
+}
+
+.group {
+    zoom:1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+body
+{
+	background-color: #FFFFFF;
+	text-align: center;
+	font-size: 100%;
+	height: 100%;
+}
+
+html {
+	height: 100%;
+}
+
+h1 {
+color:#FDB913;
+font-size:42px;
+letter-spacing:-3px;
+margin:0;
+padding:0 0 10px;
+}
+
+p {
+-x-system-font:none;
+font-family:Myriad,Arial,"Myriad Web",Verdana,sans-serif;
+font-size:14px;
+font-size-adjust:none;
+font-stretch:normal;
+font-style:normal;
+font-variant:normal;
+font-weight:normal;
+line-height:21px;
+}
+
+
+
+#pageContent
+{
+	width:1000px;
+	margin:0px auto 0 auto;
+	background-color: #FFFFFF;
+	height: 100%;
+}
+
+#headerContainer
+{
+	width:1000px;
+	background-color:#FFFFFF;
+	height: 71px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	position: relative;
+	background-image: url(/images/rootaccesHeadBackGround.jpg);
+	background-repeat: repeat-x;
+}
+
+#headerLogoContainer
+{
+	width:300px;
+	height:50px;
+	position: absolute;
+	top: 13px;
+	left: 0px;
+	text-align: left;
+}
+
+
+#headerNavigationContainer
+{
+	width:655px;
+	height:50px;
+	position: absolute;
+	top: 22px;
+	right: 37px;
+	text-align: left;
+	
+}
+
+
+#mainNav{
+	height: 39px;
+	width: 660px;
+	float:left;
+}
+
+#mainNav ul
+{
+list-style-type:none;
+margin:0;
+padding:0;
+overflow:hidden;
+padding-right: 40px;	
+
+}
+#mainNav li
+{
+	float:left;
+	text-decoration: none;
+	color: #57ac10;
+	padding-top: 8px;
+	padding-right: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	font-weight: bold;
+	padding-left: 15px;
+}
+#mainNav a:link
+{
+	display:block;
+	font-weight:bold;
+	color:#1D3867;
+	text-align:center;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	height: 24px;
+}
+
+#mainNav a:visited
+{
+	display:block;
+	font-weight:bold;
+	color:#1D3867;
+	text-align:center;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+	height: 24px;
+}
+
+#mainNav a:hover,a:active
+{
+	text-decoration: none;
+	color: #57ac10;
+}
+
+#mainNav .special
+{
+	text-decoration: none;
+	color: #57ac10;
+	background-color: #FFFFFF;
+	height: 25px;
+}
+
+#subHeaderContainer
+{
+	width:1000px;
+	background-color:#FFFFFF;
+	height: 33px;
+	position: relative;
+	background-image: url(/images/rootaccesSubHeadBackGround.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+#subHeaderContainer .crumbTrailContainer
+{
+	width:655px;
+	height:20px;
+	position: absolute;
+	top: 5px;
+	left: 15px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 22px;
+	color: #666666;
+}
+
+#subHeaderContainer .crumbTrailContainer a
+{
+	text-decoration: none;
+	color: #666666;
+}
+
+#subHeaderContainer .crumbTrailContainer a:hover
+{
+	text-decoration: underline;
+	color: #FF6600;
+}
+
+#subHeaderContainer .loginContainer
+
+{
+	width:250px;
+	height:20px;
+	position: absolute;
+	top: -6px;
+	right: 22px;
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	text-decoration: none;
+	line-height: 22px;
+	color: #666666;
+}
+
+
+#welcomeHeader
+{
+	width:1000px;
+	background-color:#FFFFFF;
+	height: 300px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	position: relative;
+	background-image: url(/images/welcomeHeaderBackground.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-align: left;
+}
+
+#welcomeHeader .content
+{
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 25px;
+	width: 300px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #666666;
+	line-height: 20px;
+	display: inline-block;
+	float: left;
+}
+
+
+
+#welcomeHeader .networkName, #reportWindowHeader
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #1D3867;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+
+
+ 
+ 
+#welcomeHeader .videoContainer {
+	text-align : left;
+	width:500px;
+	height: 300px;
+	float: right;
+	margin: 0;
+	padding-top: 15px;
+	padding-right: 25px;
+	display: inline-block;
+}
+
+#superbox {
+	overflow: hidden;
+}
+
+div.networkHeader
+{
+	width:1000px;
+	background-color:#FFFFFF;
+	height: 155px;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	position: relative;
+	background-image: url(/images/networkPageHeaderBackGround.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-align: left;
+}
+
+div.networkHeader .content, #mainReportWindow
+{
+	padding-top: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+	width: 550px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #006cb3;
+	line-height: 15px;
+	display: inline-block;
+	float: left;
+}
+
+
+
+div.networkHeader .networkName
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #1D3867;
+	padding-top: 5px;
+	padding-right: 0px;
+	padding-bottom: 5px;
+	padding-left: 0px;
+}
+
+div.networkHeader .iconContainer {
+	text-align : left;
+	width:390px;
+	height: 145px;
+	float: left;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+}
+ 
+ 
+
+
+	
+div.networkHeader .iconContainer  ul {
+	padding-left: 75px;
+}
+div.networkHeader .iconContainer  ul li {
+display: inline;
+
+}
+
+div.networkHeader .iconContainer  ul li a {
+	width: 95px;
+	height: 145px;
+	float: left;
+	text-indent: -1000000px;
+	background-color: transparent;
+	background-image: url(/images/rootaxcessNetworkicons.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+div.networkHeader .iconContainer  ul li a.deploy {
+	background-position:0px 0px ;
+
+}
+
+div.networkHeader .iconContainer ul li a.deploy:hover {
+	background-position:-0px -145px;
+
+}
+
+div.networkHeader .iconContainer  ul li a.add {
+	background-position:  -100px 0px ;
+
+}
+
+div.networkHeader .iconContainer  ul li a.add:hover {
+	background-position:  -100px -145px ;
+
+}
+
+div.networkHeader .iconContainer  ul li a.vpn {
+	background-position:  -195px 0px ;
+
+}
+
+div.networkHeader .iconContainer  ul li a.vpn:hover {
+	background-position:  -195px -145px ;
+
+}
+
+div.networkHeader .iconContainer  ul li a.addFiles {
+	background-position:  -295px 0px ;
+
+}
+
+div.networkHeader .iconContainer  ul li a.addFiles:hover {
+	background-position:  -295px -145px ;
+
+}
+
+
+#welcomeSteps
+{
+	width:1000px;
+	position: relative;
+	text-align: left;
+	display:block;
+	background-image: url(/images/mainpageBackGround.jpg);
+	background-repeat: repeat-y;
+	background-position: 0px 0px;
+}
+
+#welcomeSteps .singleStep
+{
+	width:1000px;
+	text-align: left;
+	display:block;
+	padding-top:25px;
+	height:200px;
+
+
+}
+
+#welcomeSteps .singleStepImage
+{
+	width:300px;
+	text-align: left;
+	display:inline-block;
+	padding-left:10px;
+	float:left;
+
+}
+
+
+
+#welcomeSteps .singleStep .description
+{
+	width:500px;
+	float:left;
+	text-align: left;
+	display:inline-block;
+	padding-left:50px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	color: #0066cc;
+	padding-top:10px;
+
+
+
+}
+
+#welcomeSteps .singleStep .descriptionDark
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 22px;
+	font-weight: bold;
+	color: #1D3867;
+	
+
+}
+
+#welcomeSteps .bulletPoint
+{
+	width:500px;
+	display:block;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: normal;
+	color: #333333;
+	background-image: url(/images/bulletPointBackGround.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 5px;
+	padding-left: 35px;
+	line-height: 17px;
+	padding-top: 5px;	
+
+}
+
+div.networkGuts
+{
+	width:1000px;
+	background-color:#FFFFFF;
+	position: relative;
+	text-align: left;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #999999;
+	height: 100%;
+}
+
+div.networkNavTip
+{
+	width:450px;
+	position:absolute;
+	top: 45px;
+	left: 300px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #1D3867;
+}
+
+
+div.networkGuts .leftNav
+{
+	width:170px;
+	background-color:#FFFFFF;
+	position: relative;
+	text-align: left;
+	display: inline-block;
+	height: 100%;
+	float: left;
+	background-image: url(/images/rootaccesNetworksLeftNavBackGround.jpg);
+	background-repeat: repeat-y;
+	background-position: 0px 0px;
+}
+
+div.networkGuts .leftNavGuts
+{
+	width:150px;
+	text-align: left;
+	display: block;
+	height: 100%;
+	float: left;
+	padding-top: 25px;
+	padding-right: 10px;
+	padding-bottom: 25px;
+	padding-left: 10px;
+	
+}
+
+div.networkGuts .leftNavGuts p
+{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #1D3867;	
+}
+
+div.networkGuts .leftNavGuts ul
+{
+	width:150px;
+	text-align: left;
+	display: block;
+	float: left;
+	padding-bottom: 3px;	
+}
+
+div.networkGuts .leftNavGuts li
+{
+	width:140px;
+	text-align: left;
+	display: block;
+	float: left;
+	padding-top: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	padding-left: 10px;
+	
+}
+
+div.networkGuts .leftNavGuts a:link,a:visited
+{
+	display:block;
+	color:#666666;
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height: 14px;
+}
+div.networkGuts .leftNavGuts a:hover,a:active
+{
+	text-decoration: underline;
+	color: #57ac10;
+}
+
+
+div.networkGuts .leftNavGuts .subcat ul
+{
+	width:140px;
+	text-align: left;
+	display: block;
+	float: left;
+	padding-bottom: 2px;
+}
+
+div.networkGuts .leftNavGuts .subcat li
+{
+	width:130px;
+	text-align: left;
+	display: block;
+	float: left;
+	padding-top: 3px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	padding-left: 20px;	
+}
+
+div.networkGuts .leftNavGuts .subcat a:link,a:visited
+{
+	display:block;
+	color:#666666;
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	height: 14px;
+}
+div.networkGuts .leftNavGuts .subcat a:hover,a:active
+{
+	text-decoration: underline;
+	color: #0066B0;
+}
+
+
+
+
+
+div.networkGuts .networkAccordion
+{
+	width:980px;
+	background-color:#FFFFFF;
+	position: relative;
+	text-align: left;
+	display: inline-block;
+	height: 100%;
+	float: left;
+	padding-left: 20px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+div.networkGuts .networkInformationContainer
+{
+	width:775px;
+	position: relative;
+	text-align: left;
+	display: block;
+	min-height: 65px;
+	height: auto !important;
+	height: 65px;
+	float: left;
+	margin-top: -30px;
+	margin-left: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+div.networkGuts .networkInformationContainer .networkName
+{
+	width:275px;
+	text-align: left;
+	display: block;
+	height: 55px;
+	min-height: 55px;
+	height: auto !important;
+	height: 55px;	
+	margin-bottom: 10px;
+	margin-right: 10px;
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	color: #1D3867;
+	padding-left: 15px;
+}
+
+div.networkGuts .networkInformationContainer .networkIPField
+{
+	width:120px;
+	text-align: left;
+	display: block;
+	height: 55px;
+	float: left;
+	font-size: 14px;
+	font-weight: normal;
+	color: #1D3867;
+}
+
+div.networkGuts .networkInformationContainer .IPentry
+{
+	margin-top: 4px;
+	display: block;
+}
+
+div.networkGuts .networkInformationContainer .networkServerField
+{
+	width:60px;
+	text-align: center;
+	display: block;
+	height: 55px;
+	float: left;
+	font-size: 14px;
+	font-weight: normal;
+	color: #1D3867;
+}
+
+div.networkGuts .networkInformationContainer .networkTags
+{
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+}
+
+div.networkGuts .networkInformationContainer .networkName .networkEdits
+{
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight:normal;
+	color: #006cb3;
+	text-decoration: none;
+}
+
+
+div.networkGuts .serverInformationContainer
+{
+	width:800px;
+	padding-left:25px;
+	position: relative;
+	text-align: left;
+	display: block;
+	min-height: 55px;
+	height: auto !important;
+	height: 55px;
+	float: left;
+	margin-top: 0px;
+	margin-left: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+div.networkGuts .serverInformationContainer .serverON
+{
+	width:20px;
+	text-align: left;
+	display: block;
+	height: 45px;
+	float: left;
+	background-image: url(/images/serverstatuslightGreen.png);
+	background-repeat: no-repeat;
+	background-position: 3px 10px;
+	padding-left: 5px;
+}
+
+div.networkGuts .serverInformationContainer .serverOFF
+{
+	width:20px;
+	text-align: left;
+	display: block;
+	height: 45px;
+	float: left;
+	background-image: url(/images/serverstatuslightRed.png);
+	background-repeat: no-repeat;
+	background-position: 3px 10px;
+	padding-left: 5px;
+}
+
+div.networkGuts .serverInformationContainer .serverWORKING
+{
+	width:20px;
+	text-align: left;
+	display: block;
+	height: 45px;
+	float: left;
+	background-image: url(/images/working.gif);
+	background-repeat: no-repeat;
+	background-position: 3px 10px;
+	background-size: 20px 20px;
+	padding-left: 5px;
+}
+
+div.networkGuts .serverInformationContainer .serverName
+{
+	width:250px;
+	text-align: left;
+	display: block;
+	height: 55px;
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	color: #1D3867;
+	padding-left: 10px;
+}
+
+div.networkGuts .serverInformationContainer .serverDesciption
+{
+	width:250px;
+	text-align: left;
+	display: inline-block;
+	float: left;
+	font-size: 11px;
+	font-weight: normal;
+	color: #1D3867;
+}
+
+div.networkGuts .serverInformationContainer .dataField
+{
+	width:140px;
+	text-align: left;
+	display: inline-block;
+	height: 55px;
+	float: left;
+	font-size: 11px;
+	font-weight: bold;
+	color: #1D3867;
+	padding-left: 18px;
+	padding-top: 12px;
+}
+
+div.networkGuts .serverInformationContainer .dataFieldText
+{
+	
+	font-size: 10px;
+	font-weight: normal;
+	color: #666666;
+}
+
+div.networkGuts .serverInformationContainer .IPentry
+{
+	margin-top: 4px;
+	display: block;
+}
+
+div.networkGuts .serverInformationContainer .networkServerField
+{
+	width:100px;
+	text-align: left;
+	display: block;
+	height: 55px;
+	float: left;
+	font-size: 14px;
+	font-weight: normal;
+	color: #1D3867;
+}
+
+div.networkGuts .serverInformationContainer .networkTags
+{
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+}
+
+div.networkGuts .serverInformationContainer .networkName .networkEdits a
+{
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #006cb3;
+	text-decoration: underline;
+}
+
+
+.networkIconContainer {
+	text-align : left;
+	width:270px;
+	height: 60px;
+	float: left;
+	display: block;
+	padding-top: 0px;
+}
+
+a.largeNetworkIcon {
+	display: inline-block;
+	width:30px;
+	height:54px;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.largeNetworkIcon:hover {
+    background-attachment: scroll;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position:  0 -60px;
+}
+a.deleteNetwork {
+	background-image: url(/images/buttonDeleteNetwork.png);
+	background-position:  0 -60px;
+	cursor: pointer;
+}
+a.deleteNetwork:hover {
+	background-position:  0 0px;
+}
+a[id^="IPsButton_"]  {
+	background-image: url(/images/buttonManageIPs.png);
+}
+a[id^="firewallsButton_"]  {
+	background-image: url(/images/buttonManageFirewalls.png);
+}
+a[id^="balancerButton_"]  {
+	background-image: url(/images/buttonLoadBalancer.png);
+}
+a[id^="natRulesButton_"]  {
+	background-image: url(/images/buttonNatRules.png);
+}
+
+.working {
+	background-image: url(/images/working.gif);
+	background-size: 17px 17px;
+	background-repeat: no-repeat;
+	min-height: 17px;
+	height: auto !important;
+	height: 17px;
+	cursor: wait;
+}
+
+a.working:hover {
+	background-image: url(/images/working.gif);
+	background-size: 17px 17px;
+	background-repeat: no-repeat;
+}
+
+.pseudo-dk {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 20px;
+	height: 20px;
+	padding: 2px 0px 2px 10px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	background-color: #FAFAFA;
+	text-shadow: white 1px 1px 0;
+	color: #333;
+}
+
+.pseudo-dk-server {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 16px;
+	height: 16px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	background-color: #FAFAFA;
+	text-shadow: white 1px 1px 0;
+	color: #333;
+}
+
+#storage-na {
+	padding-left: 10px;
+}
+
+div.networkGuts .editServerContainer
+{
+	width:850px;
+	padding-left:150px;
+	position: relative;
+	text-align: left;
+	display: block;
+	height: 260px;
+	float: left;
+	margin-top: 0px;
+	margin-left: 0px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	color:#333333;
+	background-image: url(/images/editorBackGround2.jpg);
+	background-repeat: no-repeat;
+	background-position: 100px 0px;
+}
+
+div.networkGuts .editServerContainer .editName
+{
+	width:235px;
+	text-align: left;
+	display: inline-block;
+	height: 90px;
+	float: left;
+	padding-left: 10px;
+}
+
+div.networkGuts .editServerContainer .dropdownRow
+{
+	width:500px;
+	text-align: left;
+	display: inline-block;
+	height: 90px;
+	float: left;
+	padding-left: 10px;
+	border:0;
+	padding-top: 27px
+}
+
+div.networkGuts .editServerContainer .dropdownRowMedium
+{
+	width:300px;
+	text-align: left;
+	display: inline-block;
+	height: 40px;
+	float: left;
+	padding-left: 10px;
+	border:0;
+}
+
+div.networkGuts .editServerContainer .dropdownRowShort
+{
+	width:150px;
+	text-align: left;
+	display: inline-block;
+	height: 90px;
+	float: left;
+	padding-left: 10px;
+	border:0;
+}
+
+div.networkGuts .editServerContainer .localMemoryContainer
+{
+	width:300px;
+	text-align: left;
+	height: 22px;
+	float: left;
+	border:0;
+}
+
+div.networkGuts .editServerContainer .scsiContainer
+{
+	width:40px;
+	text-align: left;
+	height: 22px;
+	float: left;
+	border:0;
+	display: inline-block;
+	margin: 3px;
+}
+
+div.networkGuts .editServerContainer .localMemoryOn 
+{
+	width:12px;
+	text-align: center;
+	display: inline-block;
+	height: 13px;
+	float: left;
+	border:1 solid #FFFFFF;
+	background-color: #006CB3;
+	color:#FFFFFF;
+	margin: 1px;
+	font-size:9px;
+	padding-top:2px;
+	cursor:pointer;
+
+}
+
+
+div.networkGuts .editServerContainer .localMemoryOff 
+{
+	width:12px;
+	text-align: center;
+	display: inline-block;
+	height: 13px;
+	float: left;
+	border:1 solid #FFFFFF;
+	background-color: #999999;
+	color:#FFFFFF;
+	margin: 1px;
+	font-size:9px;
+	padding-top:2px;
+
+}
+
+div.networkGuts .editServerContainer .unbolden
+{
+font-size:11px;
+font-weight:normal;
+}
+
+div.networkGuts .editServerContainer .dropdownBox1
+{
+	text-align: left;
+	display: inline-block;
+	height: 50px;
+	float: left;
+	padding-left: 10px;
+	border:0;
+	width: 70px;
+	position: relative;
+}
+
+div.networkGuts .editServerContainer .dropdownBox2
+{
+	text-align: left;
+	display: inline-block;
+	height: 50px;
+	float: left;
+	padding-left: 10px;
+	border:0;
+	width: 100px;
+	position: relative;
+}
+
+div.networkGuts .editServerContainer .dropdownBox3
+{
+	text-align: left;
+	display: inline-block;
+	height: 50px;
+	float: left;
+	padding-left: 10px;
+	border:0;
+	width: 140px;
+	position: relative;
+}
+
+div.networkGuts .editServerContainer .form-text {
+	border: 1px solid #5b9ecd;
+	width: 220px;
+	height: 20px;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	background-color: #eaf4fc;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+}
+
+div.networkGuts .editServerContainer .dropdownBox2 .form-text3 {
+	width: 50px;
+	float: left;
+	padding-left: 10px;
+}
+
+div.networkGuts .editServerContainer .dropdownBox2 .form-text3:hover {
+	border-color: #8C8C8C;
+}
+
+div.networkGuts .editServerContainer .dropdownBox2 .singleLineEntrySegment {
+	 width: 20px;
+	 float: left;
+}
+
+div.networkGuts .editServerContainer .form-text-large {
+	border: 1px solid #5b9ecd;
+	width: 220px;
+	height: 45px;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	background-color: #eaf4fc;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+}
+
+div.networkGuts .editServerContainer .topRow
+{
+	width:755px;
+	text-align: left;
+	display: block;
+	height: 115px;
+	float: left;	
+}
+
+div.networkGuts .editServerContainer .middleRow
+{
+	width:755px;
+	text-align: left;
+	display: block;
+	height: 45px;
+	float: left;
+	padding-left: 10px;
+}
+
+div.networkGuts .editServerContainer .bottomRow
+{
+	width:755px;
+	text-align: left;
+	display: block;
+	height: 50px;
+	float: left;
+	padding-left: 10px;
+}
+
+div.networkGuts .editServerContainer .textFieldContainer {
+	width: 225px;
+	height: 150px;
+	display: inline-block;
+	float: left;
+	padding-top: 5px;
+}
+
+div.networkGuts .editServerContainer .applyButtonContainer {
+	width: 60px;
+	height: 150px;
+	margin: 0px;
+	display: inline-block;
+	float: left;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 1px;
+}
+
+div.networkGuts .editServerContainer .smallSubmit {
+	display:inline;
+	height: 28px;
+	width: 60px;
+}
+
+div.networkGuts .editServerContainer .applyChangesContainer
+{
+	width:475px;
+	text-align: left;
+	display: inline-block;
+	height: 40px;
+	float: left;
+	padding-left: 10px;
+	border:0;
+}
+
+div.networkGuts .editServerContainer .VMWareContainer
+{
+	width:550px;
+	text-align: left;
+	height: 30px;
+	float: left;
+	border:0;
+	display: inline-block;
+	margin: 3px;
+	padding-top: 10px;
+	
+}
+
+div.networkGuts .editServerContainer .VMWareSpacer
+{
+	width:30px;
+	height: 9px;
+	border:0;
+	display: inline-block;
+	margin: 1px;
+	background-image: url(/images/vmwareSpacer.jpg);
+	background-repeat: repeat-x;	
+}
+
+div.networkGuts .editServerContainer .updateVMWareButtonContainer
+{
+	width:165px;
+	text-align: right;
+	display: inline-block;
+	height: 40px;
+	float: left;
+	padding-left: 10px;
+	padding-top: 10px;
+	border:0;
+}
+
+div.networkGuts .editServerContainer .publicIPContainer
+{
+	width:235px;
+	text-align: left;
+	display: inline-block;
+	height: 50px;
+	float: left;
+	padding-left: 10px;
+	padding-top: 9px;
+}
+
+
+/* Take out? */
+.serverVmwareContainer {
+	text-align : left;
+	width:150px;
+	height: 150px;
+	float: left;
+	display: block;
+	padding-left: 30px;
+}
+
+div.serverIconContainer {
+	text-align : left;
+	width:460px;
+	height: 60px;
+	float: left;
+	display: block;
+	/*padding-top: 40px;*/
+	padding-left: 30px;
+
+}
+
+a.serverButton {
+	display: inline-block;
+	width:60px;
+	height:60px;
+	background-attachment: scroll;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	cursor: pointer;
+}
+a.serverButton:hover {
+	background-position:  0 -60px;
+}
+a.serverButton:active {
+	background-position:  0 -58px;
+}
+a.startButton  {
+	background-image: url(/images/buttonStart.png);
+}
+a.shutdownButton {
+    background-image: url(/images/buttonShutdown.png);
+}
+a.rebootButton {
+    background-image: url(/images/buttonReboot.png);
+}
+a.resetButton {
+    background-image: url(/images/buttonReset.png);
+}
+a.powerButton {
+    background-image: url(/images/buttonPower.png);
+}
+a.cloneButton {
+    background-image: url(/images/buttonClone.png);
+}
+a.deleteButton {
+    background-image: url(/images/buttonDelete.png);
+}
+a.serverButton.disabled {
+	background-position: 0 -120px;
+	cursor: default;
+}
+a.serverButton.disabled:hover {
+	background-position: 0 -120px;
+}
+a.serverButton.disabled:active {
+	background-position: 0 -120px;
+}
+
+.upDownSelectorContainer {
+	display: inline-block;
+	position: absolute;
+	top: 50%;
+	margin-top: -9px;
+	height: 20px;
+	width: 15px;
+}
+
+.upSelector  {
+	display: inline-block;
+	height: 9px;
+	width: 15px;
+	background-image: url(/images/upArrows.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	cursor: pointer;
+}
+
+.upSelector:hover  {
+	display: inline-block;
+	height: 9px;
+	width: 15px;
+	background-image: url(/images/upArrows.png);
+	background-repeat: no-repeat;
+	background-position: 0px -10px;
+}
+
+.downSelector {
+	display: block;
+	height: 9px;
+	width: 15px;
+	background-image: url(/images/downArrows.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.downSelector:hover {
+	display: block;
+	height: 10px;
+	width: 15px;
+	background-image: url(/images/downArrows.png);
+	background-repeat: no-repeat;
+	background-position: 0px -10px;
+}
+
+div.deployNetworkField {
+	width: 305px;
+}
+
+div.deployNetworkLabel {
+	width: 140px;
+}
+
+.overlayNetworkTopContent .singleLineEntry .singleLineEntrySegment {
+	width: 100px;
+}
+
+.overlayNetworkTopContent .singleLineEntrySegment {
+	width:375px
+}
+
+#pad {
+	padding-bottom: 50px;
+}
+
+#spacer {
+	width: 100px;
+}
+
+.error {
+    /* border: solid 2px #FF0000; */
+    color: #FF0000;
+}
+
+div.error {
+	display: none;
+}
+
+input.error {
+	color: black;
+	border-color: #FF0000;
+	border-style: solid;
+	border-width: 1px;
+}
+
+textarea.error {
+	color: black;
+	border-color: #FF0000;
+	border-style: solid;
+	border-width: 1px;
+}
+
+<!-- End Kenner Edits -->
+
+
+
+
+/* --- Headings --- */
+h1 {font-family:georgia,'times new roman',times,serif; font-size:2.5em; font-weight:normal; color:#f60}
+
+h1, h2, h3 {margin-bottom:.25em}
+
+h2, h3, h4 a, h5 a {padding:3px 10px}
+
+h2, h4, h5 {font-size:1em}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	font-weight: bold;
+	color: #1D3867;	
+}
+
+ul.accordion h4 {
+	min-height: 85px;
+	height: auto !important;
+	height: 85px;
+	overflow: overlay;
+	display:block;
+	padding-right:25px;
+	background-image: url(/images/rootaccesNetworksHeaderBackGround.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px bottom;
+}
+
+ul.accordion h5 {
+	text-align:right;
+	min-height: 65px;
+	height: auto !important;
+	height: 65px;
+	overflow: overlay;
+	display:block;
+	padding-right:25px;
+	background-image: url(/images/rootaccesNetworksh5BackGround2.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px bottom;
+}
+
+#main h2 {background-color:#f0f0f0}
+
+#side, #side h2, #side h3 {background:#000; color:#e3e3e3}
+
+#side h2 {border-bottom:1px solid #484b51}
+
+/* --- Links --- */
+a {border:0px solid #e0e0e0; color:#05b}
+
+a:hover, a:focus, a:active {border-color:#bcd; text-decoration:underline; outline:0 none}
+
+#side a {display:block; border-width:0 0 1px; border-color:#445; color:#f0f0f0}
+
+#side a:hover, #side a:active, #side a:focus {background-color:#334}
+
+/* --- Accordion --- */
+.js #main .accordion {visibility:hidden}
+
+.js #side .accordion {display:none}
+
+.accordion {margin:0; padding:0 10px}
+
+.accordion li {list-style-type:none; }
+
+.accordion li.last-child {margin-left:19px; list-style-type:disc}
+
+#side ul.accordion ul {margin:0; padding:0 0 0 50px;}
+
+.accordion .outer {border:1px solid #dadada; border-width:0  0px 0px; background: #fff}
+
+.accordion .inner {
+	margin-bottom:0;
+	position:relative;
+	padding-top: 0.5em;
+	padding-right: 0px;
+	padding-bottom: 1em;
+	padding-left: 0px;
+	overflow:hidden;
+}
+
+.accordion .inner .inner {padding-bottom:0}
+
+.accordion .h {padding-top:.7em} /* vertical padding instead of vertical margin (ie8) */
+
+.accordion p {margin:.5em 1px 1em}
+
+/*  
+  Add styles for all links in the 'accordion':
+.accordion a {...}
+*/    
+
+a.trigger {
+	padding-right:20px;
+	background-image: url(/images/plus.png);
+	background-repeat: no-repeat;
+	background-position: 917px 50%;
+	font-weight:700;
+	text-align: right;
+}
+
+
+a.trigger h5{
+	padding-right:10px;
+	background-image: url(/images/plus.png);
+	background-repeat: no-repeat;
+	background-position: 900px 50%;
+	font-weight:700;
+	text-align: right;
+}
+a.trigger.open {background-image: url(/images/minus.png);
+}
+
+.last-child a.trigger{padding-left:1px; background-image:none; font-weight:normal}
+
+#main a.trigger {background-color:#f0f0f0;
+				 height: 75px;
+					}
+
+#main a.trigger.open {border-color:#dadada; background-color:#e7e7e7}
+
+#main a:hover.trigger.open, #main a:focus.trigger.open, #main a:active.trigger.open {border-color:#bcd}
+
+#side a.active{font-weight:700; color:#f72; text-decoration:none}
+
+.pubIpButton {
+	cursor: pointer;
+}
+
+#startBtn, #cancelBtn {
+	cursor: pointer;
+}
+
+.updateVmwareBtn {
+	width: 140px;
+	height: 32px;
+	cursor: pointer; 
+}
+
+.button {
+	cursor: pointer;
+}
+
+<!--[if lt IE 7]>
+<style>
+  div.apple_overlay {
+    background-image:url(/images/overlay_IE6.gif);
+    color:#fff;
+  }
+ 
+  /* default close button positioned on upper right corner */
+  div.apple_overlay div.close {
+    background-image:url(/images/overlay_close_IE6.gif);
+  }
+</style>
+<![endif]-->
+
+<!--[if lte IE 6]>
+<style type='text/css'>
+  * html #main, * html #container, #side a, a.trigger, .accordion .inner {height:1%}
+  #lenta{height:52px}
+</style>
+<script type="text/javascript">
+   try { document.execCommand( "BackgroundImageCache", false, true); } catch(e) {};
+</script>
+<![endif]-->
+<!--[if lte IE 7]>
+<style type="text/css">
+  .accordion .inner {position:static; overflow:visible}
+</style>
+<![endif]-->
+<!--[if !lt IE 6]><!-->
+
+img.applyServerChangesBtn {
+	width: 140px;
+	height: 32px;
+}
+
+div.serverProgress {
+	background-color: #FDFD93;
+	font-size: .75em;
+	font-weight: normal;
+	text-align: left;
+}
+
+select.removeLocalStorage {
+	width: 135px;
+}
+
+img.workingPubIp {
+	width: 30px;
+	height: 30px;
+}
+
+#mainReportWindow {
+	position: relative;
+	display: none;
+	width: 800px;
+	color: black;
+}
+
+#reportDatePicker {
+	padding-top: 20px;
+	display: hidden;
+}
+
+#reportAutoDisplay {
+	padding-top: 20px;
+	display: hidden;
+}
+
+div.calendarDiv {
+	display: inline-block;
+	float: left;
+	padding: 10px;
+}
+
+div.ui-datepicker{
+	font-size: 75%;
+}
+
+a.reportLink, a.viewAdminLink, a.navLink, a.navSubLink {
+	cursor: pointer;
+}
+
+iframe.downloader {
+	display: none;
+}
+
+div.open {
+	display: block;
+}
+
+div.closed {
+	display: none;
+}
+
+/*
+div.infoRow {
+	position: relative;
+	width: 100%;
+	clear: right;
+	border: 1px solid black;
+}
+
+div.label, div.info {
+	display: inline-block;
+}
+
+div.headerRow {
+	border: 1px solid blue;
+}
+
+div.section {
+	border: 1px solid green;
+}
+
+#accountContent {
+	position: relative;
+	left: 180px;
+}
+*/
+
+div.label, div.info {
+	display: inline-block;
+}
+
+div.label {
+	width: 150px;
+	text-align: right;
+	padding-right: 15px;
+}
+
+div.section {
+	border-bottom: solid #BBBBF5;
+	padding-bottom: 15px;
+}
+
+h1.account {
+	font-size: 20px;
+	font-weight: bold;
+	color: #1D3867;
+	letter-spacing: normal;
+}
+
+h2.account {
+	font-size: 14px;
+	font-weight: bold;
+	color: #1D3867;
+	letter-spacing: normal;
+	margin-left: 10px;
+}
+
+#deleteAdmin, #submitAdmin {
+	margin-left: 170px;
+	margin-top: 20px;
+}
+
+#addAdminForm div.infoRow {
+	margin-bottom: 5px;
+}
+
+.wait {
+	cursor: wait;
+}
+
+div.errorblock {
+	color: red;
+	font-weight: bold;
+}
+
+div.loginLabel {
+	width: 105px;
+}
+
+div.loginField {
+	width: 230px;
+}
+
+div.loginButtonDiv {
+	width: 150px;
+	margin-top: 10px;
+}
+
+#forgotPassLink {
+	color: #05B;
+	font-size: smaller;
+}

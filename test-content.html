@@ -1,0 +1,450 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<script type="text/javascript" src="tools/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="tools/js/jquery-ui-1.8.18.custom.min.js"></script>
+<link type="text/css" href="tools/css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+<script type="text/javascript">
+			$(function(){
+
+				
+				// Tabs
+				$('#tabs').tabs();
+	
+
+				
+				
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20 
+				});
+				
+				
+				
+			});
+		</script>
+        
+
+<style type="text/css">
+<!--
+
+
+#overlayContainer {
+	background-color: #fff;
+	height: 600px;
+	width: 800px;
+}
+#overlayHeader {
+	background-color: #fff;
+	height: 100px;
+	width: 800px;
+	background-image: url(images/rootaxcesAddServerOverlayHeader);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: relative;
+}
+
+#overlayHeader .subHeadContent{
+	height: 80px;
+	width: 482px;
+	height: 42px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bolder;
+	color: #1D3867;
+	position: absolute;
+	top: 59px;
+	right: 235px;
+	text-align: left;
+}
+
+#overlayHeader .subHeadContentUnbold{
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #1D3867;
+	
+}
+
+
+
+
+
+#addServerList
+{
+	width:775px;
+	text-align: left;
+	height:350px;
+	display: block;
+	float: left;
+	padding-bottom: 3px;
+	padding-left: 25px;
+	overflow: scroll;
+}
+
+
+
+#addServerList a:link,a:visited
+{
+	width:750px;
+	height:50px;
+	display:block;
+	color:#666666;
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	background-image: url(images/addServerListBackground.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+#addServerList a:hover
+{
+	width:750px;
+	height:50px;
+	display:block;
+	background-image: url(images/addServerListBackground.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px -50px;
+	text-decoration: none;
+	color: #57ac10;
+}
+
+#addServerList .serverName
+{
+
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	color: #666666;
+	
+}
+
+#addServerList .serverDescription 
+{
+	padding-left:50px;
+	padding-top: 15px;
+	width:700px;
+	height:50px;
+	display:block;
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	display:block;
+	text-align:left;
+	font-weight:normal;
+	color: #666666;
+	
+
+}
+
+#addServerList .serverDescription a:hover
+{
+	text-align:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	display:block;
+	text-align:left;
+	text-decoration:none;
+	font-weight:normal;
+	color: #666666;
+	
+
+}
+
+
+-->
+</style>
+</head>
+
+<body>
+<div align="center">
+  <div id="overlayContainer"> 
+    <div id="overlayHeader">
+			<div class="subHeadContent">Select a server that best suits your needs from the lists below.<br />
+			<span class="subHeadContentUnbold">we recommend something  about small boxes that you can upgrade later using our tools</span></div>
+   	</div>
+<div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">OS Images</a></li>
+		<li><a href="#tabs-2">Customer Images</a></li>
+		<li><a href="#tabs-3">Software Packages</a></li>
+	</ul>
+	<div id="tabs-1">
+		<div id="addServerList">
+        	
+            	<a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                </div>
+          </a>
+                
+               <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+               </div>
+          </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+               
+                
+            
+        </div>
+	</div>
+	<div id="tabs-2">
+				<div id="addServerList">
+                we are now in tab number 2
+        	
+            	<a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                </div>
+                  </a>
+                
+               <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+               </div>
+                  </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+               
+                
+            
+        </div>
+
+	</div>
+	<div id="tabs-3">
+		<div id="addServerList">
+                we are now in tab number 3
+        	
+            	<a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                </div>
+          </a>
+                
+               <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+               </div>
+          </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+                     
+                     <a href="#">
+                		<div class="serverDescription">
+                        	<span class="serverName">RedHat 6.1 64-bit 1 CPU</span> 
+                      			<br />
+              						REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                     </div>
+                     </a>
+               
+                
+            
+        </div>
+
+	</div>
+</div>
+
+</div><!-- End demo -->	</div>
+</div>
+</body>
+</html>

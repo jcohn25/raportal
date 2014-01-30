@@ -1,0 +1,1045 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Root Axcess - Clouds</title>
+
+<link type="text/css" href="tools/css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+  <link rel="stylesheet" href="tools/css/dropkick.css" type="text/css">
+<link rel="stylesheet" href="tools/css/jquery.superbox.css" type="text/css" media="all" />
+<link rel="stylesheet" href="tools/css/main.css" type="text/css" media="all" />
+
+
+
+<script type="text/javascript" src="tools/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="tools/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="tools/js/jquery.nestedAccordion.js"></script>
+<script src="tools/js/jquery.dropkick-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="tools/js/jquery.superbox-min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+      $('.default').dropkick();
+
+      $('.black').dropkick({
+        theme : 'black'
+      });
+
+      $('.change').dropkick({
+        change: function (value, label) {
+          alert('You picked: ' + label + ':' + value);
+        }
+      });
+
+      $('.existing_event').dropkick({
+        change: function () {
+          $(this).change();
+        }
+      });
+
+      $('.custom_theme').dropkick({
+        theme: 'black',
+        change: function (value, label) {
+          $(this).dropkick('theme', value);
+        }
+      });
+
+      $('.dk_container').first().focus();
+    });
+  </script>
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$("html").addClass("js");
+$.fn.accordion.defaults.container = false; 
+$(function() {
+  $("#acc3").accordion({initShow : "#current"});
+  $("#acc1").accordion({
+      el: ".h", 
+      head: "h4, h5", 
+      next: "div", 
+      initShow : "div.outer:eq(1)"
+  });
+  $("#acc2").accordion({
+      obj: "div", 
+      wrapper: "div", 
+      el: ".h", 
+      head: "h4, h5", 
+      next: "div", 
+      showMethod: "slideFadeDown",
+      hideMethod: "slideFadeUp",
+      initShow : "div.shown"
+    });
+  $("html").removeClass("js");
+});
+//--><!]]>
+</script>
+<!--<![endif]-->
+		
+<script type="text/javascript">
+			$(function(){
+
+				
+				// Tabs
+				$('#tabs').tabs();
+	
+
+				
+				
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20 
+				});
+				
+				
+				
+			});
+		</script>
+        
+        <script type="text/javascript">
+
+        
+$(function(){
+	$.superbox();
+});
+	</script>
+
+
+</head>
+
+<body>
+
+<div id="pageContent"> 
+  <div id="headerContainer">
+    	<div id="headerLogoContainer">
+         <img src="images/rootAxcessLogo.gif" alt="Root Axcess, Enterprise Cloud Solutions" />        </div>
+       	  <div id="headerNavigationContainer">
+          		<div id="mainNav"> 
+                	<ul>
+                    <li><a href="welcome.html">Home</a></li>
+                    <li class="special">Clouds</li>
+                    <li><a href="files.html">Files</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="https://admin.rootaxcesscloud.com/cloudui/app/support.htm" target="_blank">Support</a></li>
+                    </ul>
+                </div> 
+          </div>
+  </div>
+<div id="subHeaderContainer"> 
+           <div class="crumbTrailContainer"><a href="#">Root Axcess Home</a> • <a href="#">Cloud Networks</a> • <a href="#">US East</a></div>
+      <div class="loginContainer">hi there i'm a login</div>
+  </div>
+<div id="tabs">
+			<ul>
+				<li><a href="#tabs-1">US - East</a></li>
+			  <li><a href="#tabs-2">US - West</a></li>
+			</ul>
+	<div id="tabs-1">
+<div id="networkHeader"> 
+    	<div class="content"><img src="images/rootaccesCloudsTitle.png" alt="Cloud" width="201" height="59" /><br />
+         <div class="networkName"> network header jazz goes here </div>  
+         Click an individual network to see the servers belonging to it. Each server indicates whether it is running or stopped and can be clicked to display the server management dialog. Click "Deploy Network" to the right to deploy a Network.        </div>
+        
+        <div class="iconContainer">
+         <ul>
+   		<li>
+		  <a id="deploy" title="Add Server" href="deployNetwork.html" rel="superbox[iframe][800x500]">Deploy Network</a>        </li>
+
+   		<li>
+		  <a id="add" title="Add Server" href="addServers.html" rel="superbox[iframe][800x500]">Add Server</a>   		</li>
+  
+   		<li>
+		  <a id="vpn" title="Establish VPN" href="https://rootaxcess.cloud-vpn.net/" target="_blank">Establish VPN</a>   		</li>
+    </ul>
+		</div>
+    </div>
+<!--closes network header -->
+    
+    
+    
+        <div id="networkGuts">
+   		  
+            
+          <div class="networkAccordion">
+            <!-- Accordion -->
+		 <h3>Your Networks</h3>
+                    <div id="networkNavTip">Click on "Manage Network" to expand and edit servers within a given network</div>  
+<ul id="acc1" class="accordion">
+                      <li>
+                        <h4>Manage Network 
+                        <div class="networkInformationContainer">
+                          	<div class="networkName">
+                          		<span class="networkTags">Network Name</span>
+                          			<br />
+                          			Network Name goes here
+                          			<br />
+                          		<span class="networkEdits">Network Description goes here and can continue for a while if needed</span>                          	</div>
+                          
+                          	<div class="networkIPField">
+                          		<span class="networkTags">VLAN IP Range</span>
+                          		<br />
+                          		<span class="IPentry"> IP range goes here</span>                          	</div>
+                          
+                          	<div class="networkServerField">
+                          		<span class="networkTags">Servers</span>
+                          		<br />
+                          	<span class="IPentry"> 10</span>                            </div>
+                            
+                       	  <div class="networkServerField">
+                       		<div id="networkIconContainer">
+						      <a href="manageIPs.html" rel="superbox[iframe][800x500]" id="IPsButton">	 </a>	
+                              <a href="manageFirewalls.html" rel="superbox[iframe][800x500]" id="firewallsButton">	 </a>	
+                              <a href="loadBalancer.html" rel="superbox[iframe][800x500]" id="balancerButton">	 </a>	
+                              <a href="natRules.html" rel="superbox[iframe][800x500]" id="natRulesButton">	 </a>                            
+                              </div>
+                        </div>
+                        </div>
+                       </h4>
+						
+                        <div class="inner">
+                          <ul>
+                            <li>
+                             	<h5>
+                                	<div class="serverInformationContainer">
+                             			<div class="serverON">                                        </div>
+                              				<div class="serverName">
+                              					Server Name Goes Here
+                             						<div  class="serverDesciption">
+                                                    	server description goes here and can continue to go on all the way through here if need be                                                     </div>
+                                			</div>
+                                    
+                                			<div class="dataField"> 
+                                    			OS <span class="dataFieldText">REDHAT6/64</span> <br />
+ 												CPUs <span class="dataFieldText">1</span>                                            </div>
+                                    	
+                                        	<div class="dataField"> 
+                                    			Memory <span class="dataFieldText">2048MB</span><br />
+                                    			Storage <span class="dataFieldText">10GB - 0MB Local</span><br />
+                                			</div>
+                                            
+                                                  	<div class="dataField"> 
+                                    			Private IP <span class="dataFieldText">000.000.000</span><br />
+                                    			 Public IP <span class="dataFieldText">Not Assigned</span>                                			</div>
+                           		  </div>
+                              		manage                              </h5>
+
+<div class="inner">
+									<div class="editServerContainer">
+									  <div class="editName">Edit Server Name and Description Below<br />
+                               			<div class="textFieldContainer">
+                               			  <input name="serverName" type="text" class="form-text" value="Edit Server Name Here" maxlength="55" />
+                                          <div style="padding-bottom:7px"></div>
+                                          <textarea name="serverDescription" cols="150" wrap="physical" class="form-text-large">Edit Server Description here</textarea>
+                                          <div style="padding-top:10px"></div>
+                                                <div align="right"><img src="images/applyChanges.png" alt="Apply Changes" width="140" height="32" />  </div> 
+                                          <div style="padding-bottom:25px"></div>
+                                          Click below to assign a Private IP<br />
+                                          <img src="images/rootaccesNetworksPublicIPButton.jpg" alt="Assign Public IP" />                       			   	    </div>
+                                      </div>
+									  <div class="dropdownRow"><form action="#" method="post" accept-charset="utf-8" class="example_form">
+                                         		<div class="dropdownBox1">
+                                        		  Edit CPUs<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+          												<select name="test1" class="default" tabindex="2">
+          												<option value="">1</option>
+          												<option value="AU">2</option>
+          												<option value="CA">2</option>
+          												<option value="DE">4</option>
+          												<option value="JP">5</option>
+          												<option value="GB">5</option>
+          												<option value="US">7</option>
+          												</select>
+            									</div>
+                                                
+                                           <div class="dropdownBox2">
+                                        		  Edit Memory<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+											 <select name="test2" class="default" tabindex="2">
+          												<option value="">2048MB</option>
+          												<option value="AU">2048MB</option>
+          												<option value="CA">2048MB</option>
+          												<option value="DE">2048MB</option>
+          												<option value="JP">2048MB</option>
+          												<option value="GB">2048MB</option>
+          												<option value="US">2048MB</option>
+											 </select>
+       									   </div>
+                                                
+                                                <div class="dropdownBox2">
+                                        		  Edit Storage<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+   												  <select name="test3" class="default" tabindex="2">
+          												<option value="">700GB</option>
+          												<option value="AU">800GB</option>
+          												<option value="CA">900GB</option>
+          												<option value="DE">1000GB</option>
+          												<option value="JP">700GB</option>
+          												<option value="GB">700GB</option>
+          												<option value="US">700GB</option>
+   												  </select>
+       									   </div>
+                                           
+                                            <div class="dropdownBox3">
+                                            
+                                            <div id="serverVmwareContainer">
+                                         
+                                         	<div class="dropdownRowShort">VMware Tools Status
+                                            <br /> 
+                                            <span class="unbolden">Version Status:</span><br /> Out of date (8295),<br /> requires update <br /> 
+                                            <span class="unbolden">Running Status:</span> Not Running
+                                            <br /> 
+                                            <span class="unbolden">API Version:</span> 8925
+                                            </div>
+                                            
+                                         <div class="dropdownRowShort">    <div style="padding-top:10px"></div>
+                                                <div align="right"><img src="images/updateVMware.png" width="140" height="32" />  </div> 
+                                           </div>
+                                         </div>
+                                   
+                                                 									   </div>
+                                                
+                                         </form>
+                                         <div class="dropdownRowMedium"> Remove Local Storage <br/><span class="unbolden">Click the port from which you would like to remove storage</span>
+                                           <div style="padding-bottom:3px"></div>
+                                       <div class="localMemoryContainer"><div class="scsiContainer">SCSI ID</div> <div class="localMemoryOn">1</div>
+                                         <div class="localMemoryOn">2</div>
+                                         <div class="localMemoryOn">3</div>
+                                         <div class="localMemoryOn">4</div>
+                                         <div class="localMemoryOn">5</div>
+                                         <div class="localMemoryOff">6</div>
+                                         <div class="localMemoryOff">7</div>
+                                         <div class="localMemoryOff">8</div>
+                                         <div class="localMemoryOff">9</div>
+                                         <div class="localMemoryOff">10</div>
+                                         <div class="localMemoryOff">11</div>
+                                         <div class="localMemoryOff">12</div>
+                                         <div class="localMemoryOff">13</div>
+                                         <div class="localMemoryOff">14</div>
+                                         <div class="localMemoryOff">15</div>
+                                         <div class="localMemoryOff">16</div>
+                                         <div class="localMemoryOff">17</div>
+                                         <div class="localMemoryOff">18</div>
+										 </div>
+                                         </div>
+                                          <div class="dropdownRowMedium">
+												<div style="padding-top:15px"></div>
+                                                <div align="right"><img src="images/applyChanges.png" alt="Apply Changes" width="140" height="32" />  </div> 
+                                         </div>
+                                                                                  
+
+                                         <div id="serverIconContainer">
+										   <a href="#" id="startButton">	 </a>	
+                                           <a href="#" id="shutdownButton">	 </a>	
+                                           <a href="#" id="rebootButton">	 </a>	
+                                           <a href="#" id="resetButton">	 </a>	
+                                           <a href="#" id="powerButton">	 </a>	
+                                           <a href="#" id="cloneButton">	 </a>	
+                                           <a href="#" id="deleteButton">	 </a>                                         </div>
+                                      </div>
+                                </div>
+                              </div>
+                            </li>
+                            
+                            <li>
+<h5>
+                                	<div class="serverInformationContainer">
+                             			<div class="serverON">                                        </div>
+                       				  <div class="serverName">
+                              					Server Name Goes Here
+                             						<div  class="serverDesciption">
+                                                    	server description goes here and can continue to go on all the way through here if need be                                        </div>
+                           			  </div>
+                                    
+                                			<div class="dataField"> 
+                                    			OS <span class="dataFieldText">REDHAT6/64</span> <br />
+ 												CPUs <span class="dataFieldText">1</span>                                      </div>
+                                    	
+                                        	<div class="dataField"> 
+                                    			Memory <span class="dataFieldText">2048MB</span><br />
+                                    			Storage <span class="dataFieldText">10GB - 0MB Local</span><br />
+                           			  </div>
+                                            
+                                                  	<div class="dataField"> 
+                                    			Private IP <span class="dataFieldText">000.000.000</span><br />
+                                    			 Public IP <span class="dataFieldText">Not Assigned</span>                                			</div>
+                           		  </div>
+                              		manage                              </h5>
+
+<div class="inner">
+									<div class="editServerContainer">
+									  <div class="editName">Edit Server Name and Description Below<br />
+                               			<div class="textFieldContainer">
+                               			  <input name="serverName" type="text" class="form-text" value="Edit Server Name Here" maxlength="55" />
+                                          <div style="padding-bottom:7px"></div>
+                                          <textarea name="serverDescription" cols="150" wrap="physical" class="form-text-large">Edit Server Description here</textarea>
+                                          <div style="padding-bottom:7px"></div>
+                                          Click below to assign a Private IP<br />
+                                          <img src="images/rootaccesNetworksPublicIPButton.jpg" alt="Assign Public IP" />                       			   	    </div>
+                                         <div class="applyButtonContainer"><img src="images/rootaccesNetworksApplyButtonSmall.png" width="65" height="32" />
+                                         <div style="padding-bottom:24px"></div>
+                                          <img src="images/rootaccesNetworksApplyButtonSmall.png" width="65" height="32" />                                         </div>
+                                      </div>
+                                         <div class="dropdownRow"><form action="#" method="post" accept-charset="utf-8" class="example_form">
+                                         		<div class="dropdownBox1">
+                                        		  Edit CPUs<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+          												<select name="test4" class="default" tabindex="2">
+          												<option value="">1</option>
+          												<option value="AU">2</option>
+          												<option value="CA">2</option>
+          												<option value="DE">4</option>
+          												<option value="JP">5</option>
+          												<option value="GB">5</option>
+          												<option value="US">7</option>
+          												</select>
+            									</div>
+                                                
+                                           <div class="dropdownBox2">
+                                        		  Edit Memory<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+											 <select name="test5" class="default" tabindex="2">
+          												<option value="">2048MB</option>
+          												<option value="AU">2048MB</option>
+          												<option value="CA">2048MB</option>
+          												<option value="DE">2048MB</option>
+          												<option value="JP">2048MB</option>
+          												<option value="GB">2048MB</option>
+          												<option value="US">2048MB</option>
+											 </select>
+       									   </div>
+                                                
+                                                <div class="dropdownBox2">
+                                        		  Edit Storage<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+   												  <select name="test6" class="default" tabindex="2">
+          												<option value="">700GB</option>
+          												<option value="AU">800GB</option>
+          												<option value="CA">900GB</option>
+          												<option value="DE">1000GB</option>
+          												<option value="JP">700GB</option>
+          												<option value="GB">700GB</option>
+          												<option value="US">700GB</option>
+   												  </select>
+       									   </div>
+                                           
+                                            <div class="dropdownBox3">
+                                   
+                                              <div style="padding-bottom:10px"></div>
+<img src="images/applyChanges.png" alt="Apply Changes" width="140" height="32" />       									   </div>
+                                                
+                                         </form>
+                                         <div class="dropdownRow"> Remove Local Storage <span class="unbolden">Click the port from which you would like to remove storage</span>
+                                           <div style="padding-bottom:3px"></div>
+                                       <div class="localMemoryContainer"><div class="scsiContainer">SCSI ID</div> <div class="localMemoryOn">1</div>
+                                         <div class="localMemoryOn">2</div>
+                                         <div class="localMemoryOn">3</div>
+                                         <div class="localMemoryOn">4</div>
+                                         <div class="localMemoryOn">5</div>
+                                         <div class="localMemoryOff">6</div>
+                                         <div class="localMemoryOff">7</div>
+                                         <div class="localMemoryOff">8</div>
+                                         <div class="localMemoryOff">9</div>
+                                         <div class="localMemoryOff">10</div>
+                                         <div class="localMemoryOff">11</div>
+                                         <div class="localMemoryOff">12</div>
+                                         <div class="localMemoryOff">13</div>
+                                         <div class="localMemoryOff">14</div>
+                                         <div class="localMemoryOff">15</div>
+                                         <div class="localMemoryOff">16</div>
+                                         <div class="localMemoryOff">17</div>
+                                         <div class="localMemoryOff">18</div>
+										 </div>
+                                         </div>
+                                                                                  
+
+                                         <div id="serverIconContainer">
+										   <a href="#" id="startButton">	 </a>	
+                                           <a href="#" id="shutdownButton">	 </a>	
+                                           <a href="#" id="rebootButton">	 </a>	
+                                           <a href="#" id="resetButton">	 </a>	
+                                           <a href="#" id="powerButton">	 </a>	
+                                           <a href="#" id="cloneButton">	 </a>	
+                                           <a href="#" id="deleteButton">	 </a>                                         </div>
+                                      </div>
+                                </div>
+                              </div>
+                            </li>
+                            
+                            <li>
+<h5>
+                                	<div class="serverInformationContainer">
+                             			<div class="serverON">                                        </div>
+                       				  <div class="serverName">
+                              					Server Name Goes Here
+                             						<div  class="serverDesciption">
+                                                    	server description goes here and can continue to go on all the way through here if need be                                        </div>
+                           			  </div>
+                                    
+                                			<div class="dataField"> 
+                                    			OS <span class="dataFieldText">REDHAT6/64</span> <br />
+ 												CPUs <span class="dataFieldText">1</span>                                      </div>
+                                    	
+                                        	<div class="dataField"> 
+                                    			Memory <span class="dataFieldText">2048MB</span><br />
+                                    			Storage <span class="dataFieldText">10GB - 0MB Local</span><br />
+                           			  </div>
+                                            
+                                                  	<div class="dataField"> 
+                                    			Private IP <span class="dataFieldText">000.000.000</span><br />
+                                    			 Public IP <span class="dataFieldText">Not Assigned</span>                                			</div>
+                           		  </div>
+                              		manage                              </h5>
+
+<div class="inner">
+									<div class="editServerContainer">
+									  <div class="editName">Edit Server Name and Description Below<br />
+                               			<div class="textFieldContainer">
+                               			  <input name="serverName" type="text" class="form-text" value="Edit Server Name Here" maxlength="55" />
+                                          <div style="padding-bottom:7px"></div>
+                                          <textarea name="serverDescription" cols="150" wrap="physical" class="form-text-large">Edit Server Description here</textarea>
+                                          <div style="padding-bottom:7px"></div>
+                                          Click below to assign a Private IP<br />
+                                          <img src="images/rootaccesNetworksPublicIPButton.jpg" alt="Assign Public IP" />                       			   	    </div>
+                                         <div class="applyButtonContainer"><img src="images/rootaccesNetworksApplyButtonSmall.png" width="65" height="32" />
+                                         <div style="padding-bottom:24px"></div>
+                                          <img src="images/rootaccesNetworksApplyButtonSmall.png" width="65" height="32" />                                         </div>
+                                      </div>
+                                         <div class="dropdownRow"><form action="#" method="post" accept-charset="utf-8" class="example_form">
+                                         		<div class="dropdownBox1">
+                                        		  Edit CPUs<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+          												<select name="test7" class="default" tabindex="2">
+          												<option value="">1</option>
+          												<option value="AU">2</option>
+          												<option value="CA">2</option>
+          												<option value="DE">4</option>
+          												<option value="JP">5</option>
+          												<option value="GB">5</option>
+          												<option value="US">7</option>
+          												</select>
+            									</div>
+                                                
+                                           <div class="dropdownBox2">
+                                        		  Edit Memory<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+											 <select name="test8" class="default" tabindex="2">
+          												<option value="">2048MB</option>
+          												<option value="AU">2048MB</option>
+          												<option value="CA">2048MB</option>
+          												<option value="DE">2048MB</option>
+          												<option value="JP">2048MB</option>
+          												<option value="GB">2048MB</option>
+          												<option value="US">2048MB</option>
+											 </select>
+       									   </div>
+                                                
+                                                <div class="dropdownBox2">
+                                        		  Edit Storage<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+   												  <select name="test9" class="default" tabindex="2">
+          												<option value="">700GB</option>
+          												<option value="AU">800GB</option>
+          												<option value="CA">900GB</option>
+          												<option value="DE">1000GB</option>
+          												<option value="JP">700GB</option>
+          												<option value="GB">700GB</option>
+          												<option value="US">700GB</option>
+   												  </select>
+       									   </div>
+                                           
+                                            <div class="dropdownBox3">
+                                   
+                                              <div style="padding-bottom:10px"></div>
+<img src="images/applyChanges.png" alt="Apply Changes" width="140" height="32" />       									   </div>
+                                                
+                                         </form>
+                                         <div class="dropdownRow"> Remove Local Storage <span class="unbolden">Click the port from which you would like to remove storage</span>
+                                           <div style="padding-bottom:3px"></div>
+                                       <div class="localMemoryContainer"><div class="scsiContainer">SCSI ID</div> <div class="localMemoryOn">1</div>
+                                         <div class="localMemoryOn">2</div>
+                                         <div class="localMemoryOn">3</div>
+                                         <div class="localMemoryOn">4</div>
+                                         <div class="localMemoryOn">5</div>
+                                         <div class="localMemoryOff">6</div>
+                                         <div class="localMemoryOff">7</div>
+                                         <div class="localMemoryOff">8</div>
+                                         <div class="localMemoryOff">9</div>
+                                         <div class="localMemoryOff">10</div>
+                                         <div class="localMemoryOff">11</div>
+                                         <div class="localMemoryOff">12</div>
+                                         <div class="localMemoryOff">13</div>
+                                         <div class="localMemoryOff">14</div>
+                                         <div class="localMemoryOff">15</div>
+                                         <div class="localMemoryOff">16</div>
+                                         <div class="localMemoryOff">17</div>
+                                         <div class="localMemoryOff">18</div>
+										 </div>
+                                         </div>
+                                                                                  
+
+                                         <div id="serverIconContainer">
+										   <a href="#" id="startButton">	 </a>	
+                                           <a href="#" id="shutdownButton">	 </a>	
+                                           <a href="#" id="rebootButton">	 </a>	
+                                           <a href="#" id="resetButton">	 </a>	
+                                           <a href="#" id="powerButton">	 </a>	
+                                           <a href="#" id="cloneButton">	 </a>	
+                                           <a href="#" id="deleteButton">	 </a>                                         </div>
+                                      </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+<h5>
+                                	<div class="serverInformationContainer">
+                             			<div class="serverON">                                        </div>
+                       				  <div class="serverName">
+                              					Server Name Goes Here
+                             						<div  class="serverDesciption">
+                                                    	server description goes here and can continue to go on all the way through here if need be                                        </div>
+                           			  </div>
+                                    
+                                			<div class="dataField"> 
+                                    			OS <span class="dataFieldText">REDHAT6/64</span> <br />
+ 												CPUs <span class="dataFieldText">1</span>                                      </div>
+                                    	
+                                        	<div class="dataField"> 
+                                    			Memory <span class="dataFieldText">2048MB</span><br />
+                                    			Storage <span class="dataFieldText">10GB - 0MB Local</span><br />
+                           			  </div>
+                                            
+                                                  	<div class="dataField"> 
+                                    			Private IP <span class="dataFieldText">000.000.000</span><br />
+                                    			 Public IP <span class="dataFieldText">Not Assigned</span>                                			</div>
+                           		  </div>
+                              		manage                              </h5>                             
+<div class="inner">
+									<div class="editServerContainer">
+									  <div class="editName">Edit Server Name and Description Below<br />
+                               			<div class="textFieldContainer">
+                               			  <input name="serverName" type="text" class="form-text" value="Edit Server Name Here" maxlength="55" />
+                                          <div style="padding-bottom:7px"></div>
+                                          <textarea name="serverDescription" cols="150" wrap="physical" class="form-text-large">Edit Server Description here</textarea>
+                                          <div style="padding-bottom:7px"></div>
+                                          Click below to assign a Private IP<br />
+                                          <img src="images/rootaccesNetworksPublicIPButton.jpg" alt="Assign Public IP" />                       			   	    </div>
+                                         <div class="applyButtonContainer"><img src="images/rootaccesNetworksApplyButtonSmall.png" width="65" height="32" />
+                                         <div style="padding-bottom:24px"></div>
+                                          <img src="images/rootaccesNetworksApplyButtonSmall.png" width="65" height="32" />                                         </div>
+                                      </div>
+                                         <div class="dropdownRow"><form action="#" method="post" accept-charset="utf-8" class="example_form">
+                                         		<div class="dropdownBox1">
+                                        		  Edit CPUs<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+          												<select name="test10" class="default" tabindex="2">
+          												<option value="">1</option>
+          												<option value="AU">2</option>
+          												<option value="CA">2</option>
+          												<option value="DE">4</option>
+          												<option value="JP">5</option>
+          												<option value="GB">5</option>
+          												<option value="US">7</option>
+          												</select>
+            									</div>
+                                                
+                                           <div class="dropdownBox2">
+                                        		  Edit Memory<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+											 <select name="test11" class="default" tabindex="2">
+          												<option value="">2048MB</option>
+          												<option value="AU">2048MB</option>
+          												<option value="CA">2048MB</option>
+          												<option value="DE">2048MB</option>
+          												<option value="JP">2048MB</option>
+          												<option value="GB">2048MB</option>
+          												<option value="US">2048MB</option>
+											 </select>
+       									   </div>
+                                                
+                                                <div class="dropdownBox2">
+                                        		  Edit Storage<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+   												  <select name="test12" class="default" tabindex="2">
+          												<option value="">700GB</option>
+          												<option value="AU">800GB</option>
+          												<option value="CA">900GB</option>
+          												<option value="DE">1000GB</option>
+          												<option value="JP">700GB</option>
+          												<option value="GB">700GB</option>
+          												<option value="US">700GB</option>
+   												  </select>
+       									   </div>
+                                           
+                                            <div class="dropdownBox3">
+                                   
+                                              <div style="padding-bottom:10px"></div>
+<img src="images/applyChanges.png" alt="Apply Changes" width="140" height="32" />       									   </div>
+                                                
+                                         </form>
+                                         <div class="dropdownRow"> Remove Local Storage <span class="unbolden">Click the port from which you would like to remove storage</span>
+                                           <div style="padding-bottom:3px"></div>
+                                       <div class="localMemoryContainer"><div class="scsiContainer">SCSI ID</div> <div class="localMemoryOn">1</div>
+                                         <div class="localMemoryOn">2</div>
+                                         <div class="localMemoryOn">3</div>
+                                         <div class="localMemoryOn">4</div>
+                                         <div class="localMemoryOn">5</div>
+                                         <div class="localMemoryOff">6</div>
+                                         <div class="localMemoryOff">7</div>
+                                         <div class="localMemoryOff">8</div>
+                                         <div class="localMemoryOff">9</div>
+                                         <div class="localMemoryOff">10</div>
+                                         <div class="localMemoryOff">11</div>
+                                         <div class="localMemoryOff">12</div>
+                                         <div class="localMemoryOff">13</div>
+                                         <div class="localMemoryOff">14</div>
+                                         <div class="localMemoryOff">15</div>
+                                         <div class="localMemoryOff">16</div>
+                                         <div class="localMemoryOff">17</div>
+                                         <div class="localMemoryOff">18</div>
+										 </div>
+                                         </div>
+                                                                                  
+
+                                         <div id="serverIconContainer">
+										   <a href="#" id="startButton">	 </a>	
+                                           <a href="#" id="shutdownButton">	 </a>	
+                                           <a href="#" id="rebootButton">	 </a>	
+                                           <a href="#" id="resetButton">	 </a>	
+                                           <a href="#" id="powerButton">	 </a>	
+                                           <a href="#" id="cloneButton">	 </a>	
+                                           <a href="#" id="deleteButton">	 </a>                                         </div>
+                                      </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+					<h4>Manage Network
+                        <div class="networkInformationContainer">
+                          	<div class="networkName">
+                          		<span class="networkTags">Network Name</span>
+                          			<br />
+                          			Network Name goes here
+                          			<br />
+                          		<span class="networkEdits"><a href="linkgoeshere">Edit Network Name</a></span>                          	</div>
+                          
+                          	<div class="networkIPField">
+                          		<span class="networkTags">VLAN IP Range</span>
+                          		<br />
+                          		<span class="IPentry"> IP range goes here</span>                          	</div>
+                          
+                          	<div class="networkServerField">
+                          		<span class="networkTags">Servers</span>
+                          		<br />
+                          	<span class="IPentry"> 10</span>                            </div>
+                            
+                   	  <div class="networkServerField">
+                   		<div id="networkIconContainer">
+						      <a href="manageIPs.html" rel="superbox[iframe][800x550]" id="IPsButton">	 </a>	
+                              <a href="manageFirewalls.html" rel="superbox[iframe][750x550]" id="firewallsButton">	 </a>	
+                              <a href="loadBalancer.html" rel="superbox[iframe][800x550]" id="balancerButton">	 </a>	
+                              <a href="natRules.html" rel="superbox[iframe][800x550]" id="natRulesButton">	 </a>                        </div>
+                        </div></div>
+						</h4>
+
+                        <div class="inner">
+                          <ul>
+                            <li>
+                             	<h5>
+                                	<div class="serverInformationContainer">
+                             			<div class="serverON">                                        </div>
+                              				<div class="serverName">
+                              					Server Name Goes Here
+                             						<div  class="serverDesciption">
+                                                    	server description goes here and can continue to go on all the way through here if need be                                                     </div>
+                                			</div>
+                                    
+                                			<div class="dataField"> 
+                                    			OS <span class="dataFieldText">REDHAT6/64</span> <br />
+                                    			Storage <span class="dataFieldText">10GB - 0MB Local</span><br />
+ 												CPUs <span class="dataFieldText">1</span>                                            </div>
+                                    	
+                                        	<div class="dataField"> 
+                                    			Memory <span class="dataFieldText">2048MB</span><br />
+                                    			Private IP <span class="dataFieldText">000.000.000</span><br />
+                                    			 Public IP <span class="dataFieldText">Not Assigned</span>                                			</div>
+                              		</div>
+                              		manage                              </h5>                              
+<div class="inner">
+									<div class="editServerContainer">
+									  <div class="editName">Edit Server Name and Description Below<br />
+                               			<div class="textFieldContainer">
+                               			  <input name="serverName" type="text" class="form-text" value="Edit Server Name Here" maxlength="55" />
+                                          <div style="padding-bottom:7px"></div>
+                                          <textarea name="serverDescription" cols="150" wrap="physical" class="form-text-large">Edit Server Description here</textarea>
+                                          <div style="padding-bottom:7px"></div>
+                                          Click below to assign a Private IP<br />
+                                          <img src="images/rootaccesNetworksPublicIPButton.jpg" alt="Assign Public IP" />                       			   	    </div>
+                                         <div class="applyButtonContainer"><img src="images/rootaccesNetworksApplyButtonSmall.png" width="65" height="32" />
+                                         <div style="padding-bottom:24px"></div>
+                                          <img src="images/rootaccesNetworksApplyButtonSmall.png" width="65" height="32" />                                         </div>
+                                      </div>
+                                         <div class="dropdownRow"><form action="#" method="post" accept-charset="utf-8" class="example_form">
+                                         		<div class="dropdownBox1">
+                                        		  Edit CPUs<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+          												<select name="test13" class="default" tabindex="2">
+          												<option value="">1</option>
+          												<option value="AU">2</option>
+          												<option value="CA">2</option>
+          												<option value="DE">4</option>
+          												<option value="JP">5</option>
+          												<option value="GB">5</option>
+          												<option value="US">7</option>
+          												</select>
+            									</div>
+                                                
+                                           <div class="dropdownBox2">
+                                        		  Edit Memory<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+											 <select name="test14" class="default" tabindex="2">
+          												<option value="">2048MB</option>
+          												<option value="AU">2048MB</option>
+          												<option value="CA">2048MB</option>
+          												<option value="DE">2048MB</option>
+          												<option value="JP">2048MB</option>
+          												<option value="GB">2048MB</option>
+          												<option value="US">2048MB</option>
+											 </select>
+       									   </div>
+                                                
+                                                <div class="dropdownBox2">
+                                        		  Edit Storage<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+   												  <select name="test15" class="default" tabindex="2">
+          												<option value="">700GB</option>
+          												<option value="AU">800GB</option>
+          												<option value="CA">900GB</option>
+          												<option value="DE">1000GB</option>
+          												<option value="JP">700GB</option>
+          												<option value="GB">700GB</option>
+          												<option value="US">700GB</option>
+   												  </select>
+       									   </div>
+                                           
+                                            <div class="dropdownBox3">
+                                   
+                                              <div style="padding-bottom:10px"></div>
+<img src="images/applyChanges.png" alt="Apply Changes" width="140" height="32" />       									   </div>
+                                                
+                                         </form>
+                                         <div class="dropdownRow"> Remove Local Storage <span class="unbolden">Click the port from which you would like to remove storage</span>
+                                           <div style="padding-bottom:3px"></div>
+                                       <div class="localMemoryContainer"><div class="scsiContainer">SCSI ID</div> <div class="localMemoryOn">1</div>
+                                         <div class="localMemoryOn">2</div>
+                                         <div class="localMemoryOn">3</div>
+                                         <div class="localMemoryOn">4</div>
+                                         <div class="localMemoryOn">5</div>
+                                         <div class="localMemoryOff">6</div>
+                                         <div class="localMemoryOff">7</div>
+                                         <div class="localMemoryOff">8</div>
+                                         <div class="localMemoryOff">9</div>
+                                         <div class="localMemoryOff">10</div>
+                                         <div class="localMemoryOff">11</div>
+                                         <div class="localMemoryOff">12</div>
+                                         <div class="localMemoryOff">13</div>
+                                         <div class="localMemoryOff">14</div>
+                                         <div class="localMemoryOff">15</div>
+                                         <div class="localMemoryOff">16</div>
+                                         <div class="localMemoryOff">17</div>
+                                         <div class="localMemoryOff">18</div>
+										 </div>
+                                         </div>
+                                                                                  
+
+                                         <div id="serverIconContainer">
+										   <a href="#" id="startButton">	 </a>	
+                                           <a href="#" id="shutdownButton">	 </a>	
+                                           <a href="#" id="rebootButton">	 </a>	
+                                           <a href="#" id="resetButton">	 </a>	
+                                           <a href="#" id="powerButton">	 </a>	
+                                           <a href="#" id="cloneButton">	 </a>	
+                                           <a href="#" id="deleteButton">	 </a>                                         </div>
+                                      </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                             	<h5>
+                                	<div class="serverInformationContainer">
+                             			<div class="serverON">                                        </div>
+                              				<div class="serverName">
+                              					Server Name Goes Here
+                             						<div  class="serverDesciption">
+                                                    	server description goes here and can continue to go on all the way through here if need be                                                     </div>
+                                			</div>
+                                    
+                                			<div class="dataField"> 
+                                    			OS <span class="dataFieldText">REDHAT6/64</span> <br />
+                                    			Storage <span class="dataFieldText">10GB - 0MB Local</span><br />
+ 												CPUs <span class="dataFieldText">1</span>                                            </div>
+                                    	
+                                        	<div class="dataField"> 
+                                    			Memory <span class="dataFieldText">2048MB</span><br />
+                                    			Private IP <span class="dataFieldText">000.000.000</span><br />
+                                    			 Public IP <span class="dataFieldText">Not Assigned</span>                                			</div>
+                              		</div>
+                              		manage                              </h5>                              
+<div class="inner">
+									<div class="editServerContainer">
+									  <div class="editName">Edit Server Name and Description Below<br />
+                               			<div class="textFieldContainer">
+                               			  <input name="serverName" type="text" class="form-text" value="Edit Server Name Here" maxlength="55" />
+                                          <div style="padding-bottom:7px"></div>
+                                          <textarea name="serverDescription" cols="150" wrap="physical" class="form-text-large">Edit Server Description here</textarea>
+                                          <div style="padding-bottom:7px"></div>
+                                          Click below to assign a Private IP<br />
+                                          <img src="images/rootaccesNetworksPublicIPButton.jpg" alt="Assign Public IP" />                       			   	    </div>
+                                         <div class="applyButtonContainer"><img src="images/rootaccesNetworksApplyButtonSmall.png" width="65" height="32" />
+                                         <div style="padding-bottom:24px"></div>
+                                          <img src="images/rootaccesNetworksApplyButtonSmall.png" width="65" height="32" />                                         </div>
+                                      </div>
+                                         <div class="dropdownRow"><form action="#" method="post" accept-charset="utf-8" class="example_form">
+                                         		<div class="dropdownBox1">
+                                        		  Edit CPUs<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+          												<select name="test16" class="default" tabindex="2">
+          												<option value="">1</option>
+          												<option value="AU">2</option>
+          												<option value="CA">2</option>
+          												<option value="DE">4</option>
+          												<option value="JP">5</option>
+          												<option value="GB">5</option>
+          												<option value="US">7</option>
+          												</select>
+            									</div>
+                                                
+                                           <div class="dropdownBox2">
+                                        		  Edit Memory<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+											 <select name="test17" class="default" tabindex="2">
+          												<option value="">2048MB</option>
+          												<option value="AU">2048MB</option>
+          												<option value="CA">2048MB</option>
+          												<option value="DE">2048MB</option>
+          												<option value="JP">2048MB</option>
+          												<option value="GB">2048MB</option>
+          												<option value="US">2048MB</option>
+											 </select>
+       									   </div>
+                                                
+                                                <div class="dropdownBox2">
+                                        		  Edit Storage<br />
+                                                  <div style="padding-bottom:3px"></div>
+
+          												
+   												  <select name="test18" class="default" tabindex="2">
+          												<option value="">700GB</option>
+          												<option value="AU">800GB</option>
+          												<option value="CA">900GB</option>
+          												<option value="DE">1000GB</option>
+          												<option value="JP">700GB</option>
+          												<option value="GB">700GB</option>
+          												<option value="US">700GB</option>
+   												  </select>
+       									   </div>
+                                           
+                                            <div class="dropdownBox3">
+                                   
+                                              <div style="padding-bottom:10px"></div>
+<img src="images/applyChanges.png" alt="Apply Changes" width="140" height="32" />       									   </div>
+                                                
+                                         </form>
+                                         <div class="dropdownRow"> Remove Local Storage <span class="unbolden">Click the port from which you would like to remove storage</span>
+                                           <div style="padding-bottom:3px"></div>
+                                       <div class="localMemoryContainer"><div class="scsiContainer">SCSI ID</div> <div class="localMemoryOn">1</div>
+                                         <div class="localMemoryOn">2</div>
+                                         <div class="localMemoryOn">3</div>
+                                         <div class="localMemoryOn">4</div>
+                                         <div class="localMemoryOn">5</div>
+                                         <div class="localMemoryOff">6</div>
+                                         <div class="localMemoryOff">7</div>
+                                         <div class="localMemoryOff">8</div>
+                                         <div class="localMemoryOff">9</div>
+                                         <div class="localMemoryOff">10</div>
+                                         <div class="localMemoryOff">11</div>
+                                         <div class="localMemoryOff">12</div>
+                                         <div class="localMemoryOff">13</div>
+                                         <div class="localMemoryOff">14</div>
+                                         <div class="localMemoryOff">15</div>
+                                         <div class="localMemoryOff">16</div>
+                                         <div class="localMemoryOff">17</div>
+                                         <div class="localMemoryOff">18</div>
+										 </div>
+                                         </div>
+                                                                                  
+
+                                         <div id="serverIconContainer">
+										   <a href="#" id="startButton">	 </a>	
+                                           <a href="#" id="shutdownButton">	 </a>	
+                                           <a href="#" id="rebootButton">	 </a>	
+                                           <a href="#" id="resetButton">	 </a>	
+                                           <a href="#" id="powerButton">	 </a>	
+                                           <a href="#" id="cloneButton">	 </a>	
+                                           <a href="#" id="deleteButton">	 </a>                                         </div>
+                                      </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul> <!-- end accordion 1 --> 
+  </div>
+    </div>
+	
+</div>
+<div id="tabs-2">
+
+    
+    
+    
+    <div id="networkGuts">
+   		  tab 2 contents go here    </div>
+</div>
+</div>
+
+</body>
+</html>

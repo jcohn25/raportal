@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="tools/css/dropkick.css" type="text/css">
+<script type="text/javascript" src="tools/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="tools/js/jquery.tinyscrollbar.js"></script>
+<script src="tools/js/jquery.dropkick-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="tools/js/jquery-ui-1.8.18.custom.min.js"></script>
+<link type="text/css" href="tools/css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+<link type="text/css" href="tools/css/scrollbar.css" rel="stylesheet" />
+<link type="text/css" href="tools/css/overlays.css" rel="stylesheet" />	
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+				
+		$('#scrollbar1').tinyscrollbar();
+		
+		$('#scrollbarshort').tinyscrollbar();
+		
+		$('#scrollbarfarms').tinyscrollbar();
+
+		$('#scrollbarpp').tinyscrollbar();
+		
+		$('#scrollbarvip').tinyscrollbar();
+
+
+		
+	});
+</script>	
+		
+
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+      $('.default').dropkick();
+
+      $('.black').dropkick({
+        theme : 'black'
+      });
+
+      $('.change').dropkick({
+        change: function (value, label) {
+          alert('You picked: ' + label + ':' + value);
+        }
+      });
+
+      $('.existing_event').dropkick({
+        change: function () {
+          $(this).change();
+        }
+      });
+
+      $('.custom_theme').dropkick({
+        theme: 'black',
+        change: function (value, label) {
+          $(this).dropkick('theme', value);
+        }
+      });
+
+      $('.dk_container').first().focus();
+    });
+  </script>
+
+
+<script type="text/javascript">
+			$(function(){
+
+				
+				// Tabs
+				$('#tabs').tabs();
+	
+
+				
+				
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20 
+				});
+				
+				
+				
+			});
+		</script>
+        
+
+
+</head>
+
+<body>
+<div align="center">
+  <div id="overlayContainer"> 
+    <div id="overlayHeaderAddAccount"></div>
+    
+
+
+			
+    <div id="overlayNetworkTopContent">
+     
+
+	<div class="addServerSingleColumnContainer">
+  
+  <img src="images/addAccountStep1.png" style="margin-left:-45px" />
+  		<div class="singleLineEntryNarrow">
+  			<div class="singleLineEntrySegment" style="width:85px">
+            	User Name
+          </div>  
+
+                        
+             <div class="singleLineEntrySegment" style="width:225px">  
+           	      <input name="userName" type="text" class="form-text3" value="User Name " maxlength="55" /> 
+          </div>  
+        </div>         
+	
+  
+  
+  		<div class="singleLineEntryNarrow">
+  			<div class="singleLineEntrySegment" style="width:85px">
+            	First Name
+          </div>  
+
+                        
+             <div class="singleLineEntrySegment" style="width:225px">  
+           	      <input name="firstName" type="text" class="form-text3" value="First Name " maxlength="55" /> 
+          </div>      
+	   </div> 
+  
+  
+  		<div class="singleLineEntryNarrow">
+  			<div class="singleLineEntrySegment" style="width:85px">
+            	Last Name
+          </div>  
+
+                        
+             <div class="singleLineEntrySegment" style="width:225px">  
+           	      <input name="lastName" type="text" class="form-text3" value="Last Name " maxlength="55" /> 
+          </div>      
+  		</div> 
+  
+  		<div class="singleLineEntryNarrow">
+  			<div class="singleLineEntrySegment" style="width:85px">
+            	Email Address
+          </div>  
+
+                        
+             <div class="singleLineEntrySegment" style="width:225px">  
+           	      <input name="emailAddress" type="text" class="form-text3" value="Email Address " maxlength="55" /> 
+          </div> 
+        </div>            
+	       
+	<div class="singleLineEntryNarrow">
+  			<div class="singleLineEntrySegment" style="width:85px">
+            	Password
+          </div>  
+
+                        
+             <div class="singleLineEntrySegment" style="width:225px">  
+           	      <input name="password" type="text" class="form-text3" value="Password" maxlength="55" /> 
+          </div>      
+	</div>
+
+    <div class="singleLineEntryNarrow">
+  			<div class="singleLineEntrySegment" style="width:85px">
+            	Confirm Password
+          </div>  
+
+                        
+             <div class="singleLineEntrySegment" style="width:225px">  
+           	      <input name="confirmPassword" type="text" class="form-text3" value="Confirm Password" maxlength="55" /> 
+          </div>      
+	</div>
+    </div>
+           
+           
+           
+           
+        
+
+	<div class="addServerSingleColumnContainer">
+  <img src="images/addAccountStep2.png" />
+  
+  		<div class="singleLineEntryNarrow">
+	  <div class="singleLineEntrySegment" style="width:45px">
+            	 
+          </div>  
+
+                        
+             <div class="singleLineEntrySegment" style="width:15px">
+             <input name="network" type="checkbox" value="accountRolesNetwork" />
+             </div>  
+             
+              <div class="singleLineEntrySegment" style="width:55px">
+            	network
+             </div>  
+             
+             <div class="singleLineEntrySegment" style="width:15px">
+             <input name="network" type="checkbox" value="accountRolesNetwork" />
+             </div>  
+             
+              <div class="singleLineEntrySegment" style="width:55px">
+            	Server
+             </div>  
+             
+             <div class="singleLineEntrySegment" style="width:15px">
+             <input name="network" type="checkbox" value="accountRolesNetwork" />
+             </div>  
+             
+              <div class="singleLineEntrySegment" style="width:80px">
+            	Create Image
+             </div>  
+             
+               <div class="singleLineEntrySegment" style="width:45px">
+            	 
+             </div>  
+             
+             <div class="singleLineEntrySegment" style="width:15px">
+             <input name="network" type="checkbox" value="accountRolesNetwork" />
+             </div>  
+             
+              <div class="singleLineEntrySegment" style="width:55px">
+            	Files
+             </div>  
+             
+             <div class="singleLineEntrySegment" style="width:15px">
+             <input name="network" type="checkbox" value="accountRolesNetwork" />
+             </div>  
+             
+              <div class="singleLineEntrySegment" style="width:55px">
+            	Reports
+             </div>  
+        </div>         
+	
+  
+  <img src="images/addAccountStep3.png" />
+  		<div class="singleLineEntryNarrow">
+  			
+
+    <div class="singleLineEntrySegment" style="width:35px">
+            	 
+             </div>            
+            <div class="singleLineEntrySegment" style="width:75px">
+            	Department
+          </div>  
+
+                        
+             <div class="singleLineEntrySegment" style="width:165px">  
+           	      <input name="firstName" type="text" class="form-text2" value="Department " maxlength="55" /> 
+          </div>      
+	   </div> 
+  
+  
+  		<div class="singleLineEntryNarrow">
+  			    <div class="singleLineEntrySegment" style="width:35px">
+            	 
+             </div>
+            <div class="singleLineEntrySegment" style="width:75px">
+            	Customer Defined 1
+          </div>  
+
+                        
+             <div class="singleLineEntrySegment" style="width:165px">  
+           	      <textarea name="lastName" rows="2" class="form-text4">Customer Defined 1 </textarea> 
+          </div>      
+  		</div> 
+  
+  		<div class="singleLineEntryNarrow">
+  			    <div class="singleLineEntrySegment" style="width:35px">
+            	 
+             </div>
+            <div class="singleLineEntrySegment" style="width:75px">
+            	Customer Defined 2
+          </div>  
+
+                        
+             <div class="singleLineEntrySegment" style="width:165px">  
+           	      <textarea name="lastName" rows="2" class="form-text4">Customer Defined 2 </textarea> 
+          </div>      
+  		</div>        
+	       <div style="padding-bottom:10px"></div>
+	</div>
+
+       <p>&nbsp;</p>
+<div class="singleLineEntry">
+	    <div class="singleLineEntrySegment" style="width:350px">  
+           	     
+        </div>      
+          
+              <div class="singleLineEntrySegment" style="width:290px">
+              <div style="padding-bottom:10px"></div> 
+      			<img src="images/addAccountGreen.jpg" width="180" height="40" alt="Apply Rule" /><img src="images/deployServerCancel.png" width="110" height="40" />      		</div>    
+                
+                
+</div>
+          
+              
+           
+        
+  </div><!--end overlay container -->
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="tools/css/dropkick.css" type="text/css">
+<script type="text/javascript" src="tools/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="tools/js/jquery.tinyscrollbar.js"></script>
+<script src="tools/js/jquery.dropkick-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="tools/js/jquery-ui-1.8.18.custom.min.js"></script>
+<link type="text/css" href="tools/css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+<link type="text/css" href="tools/css/scrollbar.css" rel="stylesheet" />
+<link type="text/css" href="tools/css/overlays.css" rel="stylesheet" />	
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+				
+		$('#scrollbar1').tinyscrollbar();
+		
+		$('#scrollbarshort').tinyscrollbar();
+		
+		$('#scrollbarfarms').tinyscrollbar();
+
+		$('#scrollbarpp').tinyscrollbar();
+		
+		$('#scrollbarvip').tinyscrollbar();
+
+
+		
+	});
+</script>	
+		
+
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+      $('.default').dropkick();
+
+      $('.black').dropkick({
+        theme : 'black'
+      });
+
+      $('.change').dropkick({
+        change: function (value, label) {
+          alert('You picked: ' + label + ':' + value);
+        }
+      });
+
+      $('.existing_event').dropkick({
+        change: function () {
+          $(this).change();
+        }
+      });
+
+      $('.custom_theme').dropkick({
+        theme: 'black',
+        change: function (value, label) {
+          $(this).dropkick('theme', value);
+        }
+      });
+
+      $('.dk_container').first().focus();
+    });
+  </script>
+
+
+<script type="text/javascript">
+			$(function(){
+
+				
+				// Tabs
+				$('#tabs').tabs();
+	
+
+				
+				
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20 
+				});
+				
+				
+				
+			});
+		</script>
+        
+
+
+</head>
+
+<body>
+<div align="center">
+  <div id="overlayContainer"> 
+    <div id="overlayHeaderDeploy">
+			<div class="subHeadContent">Follow the 4 simple steps below to deploy a new production server on your network<br />
+	  <span class="subHeadContentUnbold">You will be able to further modify the servers once they are deployed to your networks </span></div>
+   	</div>
+    
+<img src="images/OverlayBlueLine.jpg" />                            
+
+
+			
+    <div id="overlayNetworkTopContent">
+            			<div class="selectedServerDescription">
+								<div class="tabHeaderDescription">
+                        	        <div class="selectedServerLogo">
+                                    	<img src="images/redhatLogo.png" width="50" height="60" /> 
+                                    </div>
+                                    <span class="serverName">
+                                    	RedHat 6.1 64-bit 1 CPU
+                                    </span><br />
+                        	        <div class="networkTags">
+                                    	REDHAT6/64, 1xCPU, 2048MB RAM, 10GB OS Storage, 0GB Local Storage RedHat 6.1 Enterprise (Santiago), 64-bit
+                                    </div>
+               
+       						 </div>
+        				</div>
+				        <img src="images/overlayBlueLineShort.jpg" />
+                        <div class="addServerSingleColumnContainer"><img src="images/addServerStep1.png" width="350" height="40" />
+                 	    <div class="singleLineEntrySegment" style="width:40px">
+                        </div>  
+
+                        
+                         <div class="singleLineEntrySegment" style="width:275px">  
+           	      <select name="probetype" class="default" tabindex="7">
+					 <option value="">Select available network</option>
+					 <option value="Any">Select from available this network</option>
+          										
+			      </select>      	     
+                </div>      
+<p>&nbsp;</p>
+      <img src="images/addServerStep2.png" />
+    <div class="singleLineEntrySegment" style="width:40px">
+                        </div>  
+
+      <div class="singleLineEntrySegment" style="width:275px"> 
+      <input name="deployServerName" type="text" class="form-text3" value="Insert Server Name " maxlength="55" /> 
+      </div>
+      <br  />
+      <div class="singleLineEntrySegment" style="width:40px">
+                        </div>  
+
+      <div class="singleLineEntrySegment" style="width:275px"> 
+                	   <textarea name="deployServerDescription" cols="30" rows="2" class="form-text3">insert server description</textarea> 
+
+      </div>
+      
+      </div>
+       <div class="addServerSingleColumnContainer"><img src="images/addServerStep3.png" width="350" height="40" />
+           	<div class="singleLineEntrySegment" style="width:40px">
+            </div>  
+
+      		<div class="singleLineEntrySegment" style="width:275px"> 
+      			<input name="rootLevelPassword" type="text" class="form-text3" value="Insert Password" maxlength="55" /> 
+      		</div>
+            
+            <div class="singleLineEntrySegment" style="width:40px">
+            </div>  
+
+   		 <div class="singleLineEntrySegment" style="width:275px"> 
+      			<input name="confirmRootLevelPassword" type="text" class="form-text3" value="Confirm Password " maxlength="55" /> 
+   		 </div>
+       
+      
+       
+       <img src="images/addServerStep4.png" />
+        	<div class="singleLineEntrySegment" style="width:40px">
+            </div>  
+
+      		<div class="singleLineEntrySegment" style="width:290px"> 
+      			<img src="images/deployServerStart.jpg" width="180" height="40" alt="Apply Rule" /><img src="images/deployServerCancel.png" width="110" height="40" />      		</div>
+       
+                  
+       </div>
+
+       
+
+           
+                
+                
+
+          
+          <div style="padding-bottom:10px"></div>
+              
+           
+        
+  </div><!--end overlay container -->
+</div>
+</div>
+</body>
+</html>

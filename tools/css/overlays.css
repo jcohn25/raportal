@@ -1,0 +1,1210 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+
+
+*
+{
+    margin:0;
+    padding:0;
+}
+
+#overlayContainer, #overlayContainer2 {
+	background-color: #fff;
+	height: 450px;
+	width: 800px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+}
+#overlayHeaderDeploy {
+	background-color: #fff;
+	height: 100px;
+	width: 800px;
+	background-image: url(/images/overlayHeaderDeployProductionServer.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: relative;
+}
+
+#overlayHeaderFirewalls {
+	background-color: #fff;
+	height: 100px;
+	width: 800px;
+	background-image: url(/images/overlayHeaderFirewalls.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: relative;
+}
+
+#overlayHeaderIPs {
+	background-color: #fff;
+	height: 100px;
+	width: 800px;
+	background-image: url(/images/overlayHeaderManageIPs.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: relative;
+}
+
+#overlayHeaderLoadBalancers {
+	background-color: #fff;
+	height: 100px;
+	width: 800px;
+	background-image: url(/images/overlayHeaderLoadBalancer.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: relative;
+}
+
+#overlayHeaderNatRules {
+	background-color: #fff;
+	height: 100px;
+	width: 800px;
+	background-image: url(/images/overlayHeaderNatRules.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: relative;
+}
+
+#overlayHeaderAddServer {
+	background-color: #fff;
+	height: 100px;
+	width: 800px;
+	background-image: url(/images/rootaxcesAddServerOverlayHeader.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: relative;
+}
+
+#overlayHeaderDeployNetwork {
+	background-color: #fff;
+	height: 100px;
+	width: 800px;
+	background-image: url(/images/overlayHeaderDeployNetwork.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: relative;
+}
+
+#overlayHeaderCloneServer {
+	background-color: #fff;
+	height: 100px;
+	width: 800px;
+	background-image: url(/images/overlayHeaderCloneServer.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: relative;
+}
+
+#overlayHeaderAddAccount {
+	background-color: #fff;
+	height: 70px;
+	width: 800px;
+	background-image: url(/images/overlayHeaderAddAccount.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: relative;
+}
+
+.subHeadContent{
+	height: 80px;
+	width: 704px;
+	height: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #1D3867;
+	position: absolute;
+	top: 64px;
+	right: 10px;
+	text-align: left;
+}
+
+.subHeadContentUnbold{
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #1D3867;
+	
+}
+
+#overlayNetworkTopContent, #overlayNetworkTopContent2 {
+	background-color: #fff;
+	width: 715px;
+	padding-top: 5px;
+	padding-left: 85px;
+}
+
+#overlayNetworkTopContentNoIndent{
+	background-color: #fff;
+	width: 750px;
+	padding-top: 5px;
+	padding-left: 0px;
+}
+
+#overlayNetworkNameDescription {
+	background-color: #fff;
+	height: 140px;
+	width: 420px;
+	display: inline-block;
+	float: left;
+}
+
+#overlayNetworkActionIcons {
+	height: 50px;
+	width: 200px;
+	display: inline-block;
+	float: left;
+	padding-left: 50px;
+}
+
+#overlayTabContainer {
+	height: 340px;
+	width: 700px;
+	display: block;
+	float: left;
+	padding-left: 0px;
+}
+.popupContent {
+	height: 340px;
+	width: 700px;
+	display: block;
+	float: left;
+	padding-left: 0px;
+}
+
+.networkName
+{
+	width:300px;
+	text-align: left;
+	display: block;
+	height: 55px;
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	color: #1D3867;
+}
+
+.networkDescription
+{
+	width:370px;
+	text-align: left;
+	display: block;
+	height: 55px;
+	float: left;
+	font-size: 12px;
+	font-weight: normal;
+	color: #1D3867;
+	padding-top: 10px;
+	line-height: 15px;
+}
+
+.selectedServerDescription
+{
+	width:700px;
+	text-align: left;
+	display: block;
+	height: 60px;
+	float: left;
+	font-size: 12px;
+	font-weight: normal;
+	color: #1D3867;
+	padding-bottom: 10px;
+	line-height: 15px;
+	background-image: url(/images/selectedServerBackGround.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+.selectedServerLogo
+{
+	width:50px;
+	display: inline-block;
+	height: 60px;
+	float: left;
+	padding-right:5px;
+	padding-left:5px;
+
+	
+}
+
+.addServerSingleColumnContainer
+{
+width:345px;
+display:inline-block;
+float:left
+}
+
+
+.networkTags
+{
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+}
+
+.networkEdits
+{
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #006cb3;
+}
+
+.networkEdits a
+{
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+#privateIP
+{
+	width:666px;
+	display: block;
+	float: left;
+}
+
+#publicIP
+{
+	width:666px;
+	display: block;
+	padding-top: 10px;
+	float: left;
+}
+
+.boldName
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: #1D3867;
+}
+
+.tabHeader {
+	font-size: 26px;
+	font-weight: bold;
+	color: #1D3867;
+	display:block;
+	margin-top: 10px;
+	padding-bottom: 15px;
+	height: 26px;
+	width: 690px;
+}
+
+.tabHeaderButton {
+	display:block;
+	height: 30px;
+	width: 200px;
+	padding-right:20px;
+	float:right;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.tabHeaderButtonNoPad {
+	display:block;
+	height: 30px;
+	width: 200px;
+	float:right;
+	padding: 0px 10px;
+}
+
+.tabHeaderDescription {
+	display:block;
+	height: 30px;
+	width: 400px;
+	padding-right:20px;
+	float:right;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.singleLineEntry {
+	font-size: 12px;
+	font-weight: bold;
+	color: #1D3867;
+	display:block;
+	width:700px;
+	height:35px;
+	padding-bottom: 10px;
+}
+
+.singleLineEntryNarrow {
+	font-size: 12px;
+	font-weight: bold;
+	color: #1D3867;
+	display:block;
+	width:350px;
+	height:35px;
+	padding-bottom: 5px;
+}
+
+.singleLineEntryShort {
+	font-size: 12px;
+	font-weight: bold;
+	color: #1D3867;
+	display:block;
+	width:700px;
+	height:35px;
+	padding-bottom: 5px;
+}
+
+
+.singleLineEntrySegment {
+	display:inline-block;
+	position: relative;
+	min-height: 30px;
+	height: auto !important;
+	/* overflow: overlay */
+	height:30px;
+	float: left;
+	padding-right: 10px;
+	top: 0px;
+}
+
+.singleLineEntrySegmentDouble {
+	display:inline-block;
+	min-height: 30px;
+	height: auto !important;
+	/* overflow: overlay */
+	height:30px;
+	float: left;
+	padding-right: 10px;
+	text-align:right;
+	top: 0px;
+}
+
+.singleLineEntrySegmentNoPad {
+	display:inline-block;
+	height:20px;
+	float: left;
+	padding-right: 10px;
+}
+
+.singleLineEntrySegmentFormText {
+	display:inline-block;
+	height:20px;
+	margin-top: 5px;
+	float: left;
+	padding-right: 10px;
+}
+
+.dk_container {
+    font-family: 'Helvetica',Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.realServerListContainer {
+	display:block;
+	width:700px;
+	height:250px;
+	overflow: auto;
+}
+
+.listedContainer
+{
+	width:690px;
+	min-height: 35px;
+	height: auto !important;
+	/* overflow: overlay */
+	height:35px;
+	display:block;
+	color:#1D3867;
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-top: 5px;
+	float: left;
+	background-image: url(/images/ipListBackGround.jpg);
+	background-repeat: no-repeat;
+	background-position-y: bottom; /*0px -5px;*/
+	padding-bottom: 5px;
+}
+
+div.deleteIconContainer {
+	text-align:left;
+	width:30px;
+	min-height: 35px;
+	height: auto !important;
+	/* overflow: overlay */
+	height: 35px;
+	float: left;
+	display: block;
+	/*margin-top: -13px;
+	padding-right: 10px;*/
+}
+
+div.deleteIconContainerLow {
+	text-align:left;
+	width:30px;
+	height: 30px;
+	float: left;
+	display: block;
+	margin-top: -3px;
+	padding-right: 10px;
+}
+
+/*
+.deleteButton  {
+	display: inline-block;
+	 background-attachment: scroll;
+	width:30px;
+	height:35px;
+	background-color: transparent;
+	background-image: url(/images/buttonIPDelete.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.deleteButton:hover {
+	background-position:  0 -40px;
+}
+a.deleteButton:active {
+	background-position:  0 -38px;
+}
+*/
+
+
+a.deleteIPButton {
+	display: inline-block;
+	background-attachment: scroll;
+	width: 30px;
+	height: 35px;
+	background-color: transparent;
+	background-image: url(/images/buttonIPDelete.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	cursor: pointer;
+}
+a.deleteAclRuleButton {
+	display: inline-block;
+	background-attachment: scroll;
+	width: 30px;
+	height: 35px;
+	background-color: transparent;
+	background-image: url(/images/buttonIPDelete.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	cursor: pointer;
+}
+a.deleteIPButton:hover {
+	background-position: 0 -40px;
+}
+a.deleteIPButton:active {
+	background-position: 0 -38px;
+}
+
+a.addAclRuleButton {
+	display: inline-block;
+	width: 155px;
+	height: 32px;
+	background-color: transparent;
+	background-image: url(/images/buttonAddAclRule.png);
+	background-repeat: no-repeat;	
+	cursor: pointer;
+}
+
+a.editButton  {
+	display: inline-block;
+	 background-attachment: scroll;
+	width:30px;
+	height:35px;
+	background-color: transparent;
+	background-image: url(/images/buttonIPEdit.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.editButton:hover {
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(/images/buttonIPEdit.png);
+	background-repeat: no-repeat;
+	background-position:  0 -40px;
+}
+a.editButton:active {
+   background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(/images/buttonIPEdit.png);
+	background-repeat: no-repeat;
+    background-position:  0 -40px;
+}
+
+a.addNatRuleButton  {
+	display: inline-block;
+	background-attachment: scroll;
+	width:30px;
+	height:35px;
+	background-color: transparent;
+	background-image: url(/images/buttonAddNAT.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a.addNatRuleButton:hover {
+	background-image: url(/images/buttonAddNAT.png);
+	background-position:  0 -40px;
+}
+a.addNatRuleButton:active {
+	background-image: url(/images/buttonAddNAT.png);
+    background-position:  0 -40px;
+}
+
+.probesContainer {
+	display:block;
+	width:700px;
+	height:350px;
+	overflow: auto;
+}
+
+#addACL {
+	display:none;
+	width:700px;
+	height:320px;
+}
+
+.smallbold
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #1D3867;
+}
+
+div.formLineContainer {
+	width:700px;
+	height:35px;
+	font:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#1D3867;
+	display: block;
+	float: left;
+}
+
+#formSubmitContainer {
+	width:350px;
+	height:35px;
+	font:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#1D3867;
+	display: block;
+	float: left;
+	padding-left: 350px;
+	padding-top: 10px;
+}
+
+#formSubmitContainer2 {
+	width:450px;
+	height:35px;
+	font:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#1D3867;
+	display: block;
+	float: left;
+	padding-left: 250px;
+	padding-top: 10px;
+}
+
+.fieldnames {
+	width:190px;
+	font:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	color:#1D3867;
+	display: inline-block;
+	float: left;
+	text-align: left;
+	padding-right: 0px;
+}
+
+.formfieldContainer {
+	width:500px;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	display: inline-block;
+	float: left;
+	height: 25px;
+}
+
+.form-text {
+	border: 1px solid #5b9ecd;
+	width: 300px;
+	height: 20px;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	background-color: #eaf4fc;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+}
+
+.form-text2 {
+	border: 1px solid #5b9ecd;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	background-color: #eaf4fc;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+}
+
+.form-text3 {
+	border: 1px solid #5b9ecd;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	background-color: #eaf4fc;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	width: 220px;
+
+}
+
+.form-text4 {
+	border: 1px solid #5b9ecd;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	background-color: #eaf4fc;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+	width: 170px;
+
+}
+
+.form-text-multiline {
+	border: 1px solid #5b9ecd;
+	width: 300px;
+	height: 50px;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	background-color: #eaf4fc;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+}
+
+
+.listedIPContainer
+{
+	width:700px;
+	height:35px;
+	display:block;
+	color:#1D3867;
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-top: 10px;
+	float: left;
+	background-image: url(/images/ipListBackGround.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+
+
+.listedIPContainer .listedIP
+{
+	width:375px;
+	height:30px;
+	display:inline-block;
+	color:#1D3867;
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	float: left;
+	padding-top: 10px;
+}
+
+.listedIPContainer .serverToVipControls
+{
+	width:200px;
+	height:30px;
+	display:inline-block;
+	color:#1D3867;
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-left:20px;
+	float: left;
+}
+
+
+
+.serverName
+{
+
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	color: #666666;
+	
+}
+
+.publicIPsDescription 
+{
+	padding-left:50px;
+	padding-top: 15px;
+	width:700px;
+	height:50px;
+	display:block;
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	display:block;
+	text-align:left;
+	font-weight:normal;
+	color: #666666;
+	
+
+}
+
+.publicIPsDescription a:hover
+{
+	text-align:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	display:block;
+	text-align:left;
+	text-decoration:none;
+	font-weight:normal;
+	color: #666666;
+	
+
+}
+
+#privateIP
+{
+	width:400px;
+	display: block;
+	float: left;
+}
+
+#publicIP
+{
+	width:700px;
+	display: block;
+	padding-top: 10px;
+	float: left;
+}
+
+div.osPicker {	
+	font-size: 10px;
+	font-weight: bold;
+	margin-left: 10px;
+}
+
+div.osPicker a {
+	color: #006CB3;
+	text-decoration: none;
+}
+
+div.osPicker a.showing {
+	color: #264A7A;
+	text-decoration: overline;
+}
+
+div.osPicker a:hover {
+	color: #264A7A;
+	text-decoration: underline;
+}
+
+div.addServerList
+{
+	width:715px;
+	text-align: left;
+	display: block;
+	float: left;
+	padding-bottom: 3px;
+	padding-left: 0px;
+}
+
+div.addServerList a span {
+	display: block;
+	margin-left: 50px;
+}
+
+div.addServerList a span.serverName {
+	margin-top: 15px;
+}
+
+div.addServerList a
+{
+	/* width:715px;
+	height:50px;
+	display:block;
+	color:#666666;
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px;  */
+	background-image: url(/images/addServerListBackground.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	/*margin-left:50px;*/
+	/*margin-top: 15px;*/
+	width:665px;
+	height:50px;
+	display:block;
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	display:block;
+	text-align:left;
+	font-weight:normal;
+	color: #666666;
+}
+div.addServerList a:hover
+{
+	/*width:715px;
+	height:50px;
+	display:block;
+	background-image: url(/images/addServerListBackground.jpg);
+	background-repeat: no-repeat;*/
+	background-position: 0px -50px;
+	/*text-decoration: none;*/
+	color: #57ac10;
+}
+
+div.addServerList .serverName
+{
+
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight:bold;
+	color: #666666;
+	
+}
+
+div.addServerList .serverDescription 
+{
+	padding-left:50px;
+	padding-top: 15px;
+	width:665px;
+	height:50px;
+	display:block;
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	display:block;
+	text-align:left;
+	font-weight:normal;
+	color: #666666;
+	
+
+}
+
+div.addServerList .serverDescription a:hover
+{
+	text-align:left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	display:block;
+	text-align:left;
+	text-decoration:none;
+	font-weight:normal;
+	color: #666666;
+	
+
+}
+
+.template {
+	display: none;
+}
+
+a.requestPubIpBlockLink
+{
+	cursor: pointer;
+}
+
+div.aclRulePosition {
+	width:30px;
+}
+div.aclRuleName {
+	width:190px;
+}
+div.aclRuleProtocol {
+	width:80px;
+}
+div.aclRulePort {
+	width:80px;
+}
+div.aclRuleIps {
+	width:200px;
+}
+div.aclRuleDelete {
+	width:40px;
+}
+
+#realServerNameInput {
+	width: 175px;
+}
+
+#realServerNameInput:hover {
+	border-color: #8C8C8C;
+}
+
+.message {
+	font-size: small;
+	color: orange;
+	font-weight: normal;
+}
+
+div.sectionName {
+	display: inline-block;
+	vertical-align: top;
+}
+
+div.sectionMessage {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.embeddedForm {
+	display: none;
+}
+
+.imgButton {
+	cursor: pointer;
+}
+
+.portDropdown {
+	width: 100px;
+}
+
+.serverFarmDropDown {
+	width: 200px;
+}
+
+.shortField {
+	width: 70px;
+}
+
+.inputWrapper {
+	position: absolute;
+	top: 50%;
+	height: 22px;
+	margin-top: -12px;
+	width: 80px;
+}
+
+.shortFieldUpDown {
+	left: 75px;
+}
+
+#addProbeForm .singleLineEntryShort {
+	height: 35px;
+}
+
+#addProbeForm a.dk_toggle {
+	height: 16px;
+}
+
+#positionSelect {
+	width: 285px;
+}
+
+#protocolSelect, #sourceTypeSelector, #destTypeSelector, #portSortSelector {
+	width: 85px;
+}
+
+div.newAclRuleIpBlock {
+	display: inline-block;
+	font-size: x-small;
+	text-align: center;
+	margin-left: 10px;
+}
+
+div.nodeHolder {
+	display: none;
+}
+
+div.portWrapper {
+	display: inline-block;
+}
+div.portWrapper div {
+	display: inline-block;
+}
+input.portInput {
+	width: 80px;
+}
+div#port1Wrapper {
+	margin-left: 15px;
+}
+input.serverFarmInput {
+	height: 18px;
+	width: 65px;
+	padding-left: 10px;
+}
+.editorField {
+	display: none;
+}
+
+div.sfRealServerRow, div.sfProbeRow {
+	border-bottom: thin solid gainsboro;
+	width: 530px;
+}
+
+div.sfRealServerRow div, div.sfProbeRow div {
+	display: inline-block;
+}
+div.sfRealServerRow.heading div, div.sfProbeRow.heading div {
+	font-weight: bold;
+	background-color: #1D3867;
+	color: white;
+}
+div.sfRealServerNameField {
+	width: 200px;
+}
+div.sfRealServerIpField {
+	width: 100px;
+}
+div.sfRealServerPortField {
+	width: 80px;
+}
+div.sfRealServerStatusField {
+	width: 100px;
+}
+div.sfRealServerDeleteField {
+	background-color: transparent;
+	vertical-align: bottom;
+}
+#sfRealServerAddField {
+	background-color: transparent;
+	vertical-align: bottom;
+}
+a.sfDeleteRealServer, a.sfDeleteProbe, a.sfCancelAdd {
+	background-attachment: scroll;
+	display: block;
+	width: 23px;
+	height: 17px;
+	background-color: transparent;
+	background-image: url(/images/minusIcon.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+a.sfDeleteRealServer.working, a.sfDeleteProbe.working, #addButton.working, a[id^="deleteNatRule"].working  {
+	background-image: url(/images/working.gif);
+	background-size: 17px 17px;
+	background-position: 3px 0px;
+	background-repeat: no-repeat;
+	min-height: 17px;
+	height: auto !important;
+	cursor: wait;
+}
+a.sfAddRealServer, a.sfAddProbe {
+	background-attachment: scroll;
+	display: block;
+	width: 23px;
+	height: 17px;
+	background-color: transparent;
+}
+a.sfAddRealServer.button, a.sfAddProbe.button {
+	background-image: url(/images/plusIcon.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+}
+a.sfDeleteRealServer.button:hover, a.sfAddRealServer.button:hover, a.sfDeleteProbe.button:hover, a:sfAddProbe.button:hover {
+	background-position: 0px -17px;
+}
+div.sfTemplates {
+	display: none;
+}
+div.sfProbeNameField {
+	width: 200px;
+}
+div.sfProbeTypeField {
+	width: 40px;
+}
+div.sfProbeMethodField {
+	width: 58px;
+}
+div.sfProbeIntervalField {
+	width: 80px;
+}
+div.sfProbeStatusRangeField {
+	width: 100px;
+}
+div.sfProbeDeleteField {
+	background-color: transparent;
+	vertical-align: bottom;
+}
+#sfProbeAddField {
+	background-color: transparent;
+	vertical-align: bottom;
+}
+
+#dk_container_portSortSelector div.dk_options,
+#dk_container_portSortSelector ul.dk_options_inner {
+	max-height: 75px;
+}
+
+select.sfRealServerIdToAdd, select.sfProbeIdToAdd {
+	width: 165px;
+}
+
+div.editAddField {
+	display: none;
+}
+
+#sfNewRsPortSelectorContainer {
+	width: 90px;
+}
+
+#sfNewRsPortSelectorLabelContainer {
+	width: 70px;
+}
+
+#sfNewRsPortSelectorAnyPortContainer {
+	width: 120px;
+}
+
+#sfRealServerPortLabel {
+	width: 170px;
+}
+
+div.sfNewElementFormWrapper {
+	display: none;
+}
+
+.disabled {
+	opacity: 0.3;
+	cursor: default;
+}
+
+#sfPortSelectorContainer {
+	width: 100px;
+}
+
+#netmaskDetails {
+	display: none;
+}
+
+.waiting {
+	cursor: wait;
+}

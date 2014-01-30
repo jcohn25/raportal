@@ -1,0 +1,190 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="tools/css/dropkick.css" type="text/css">
+<script type="text/javascript" src="tools/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="tools/js/jquery.tinyscrollbar.js"></script>
+<script src="tools/js/jquery.dropkick-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="tools/js/jquery-ui-1.8.18.custom.min.js"></script>
+<link type="text/css" href="tools/css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+<link type="text/css" href="tools/css/scrollbar.css" rel="stylesheet" />
+<link type="text/css" href="tools/css/overlays.css" rel="stylesheet" />	
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+				
+		$('#scrollbar1').tinyscrollbar();
+		
+		$('#scrollbarshort').tinyscrollbar();
+		
+		$('#scrollbarfarms').tinyscrollbar();
+
+		$('#scrollbarpp').tinyscrollbar();
+		
+		$('#scrollbarvip').tinyscrollbar();
+
+
+		
+	});
+</script>	
+		
+
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+      $('.default').dropkick();
+
+      $('.black').dropkick({
+        theme : 'black'
+      });
+
+      $('.change').dropkick({
+        change: function (value, label) {
+          alert('You picked: ' + label + ':' + value);
+        }
+      });
+
+      $('.existing_event').dropkick({
+        change: function () {
+          $(this).change();
+        }
+      });
+
+      $('.custom_theme').dropkick({
+        theme: 'black',
+        change: function (value, label) {
+          $(this).dropkick('theme', value);
+        }
+      });
+
+      $('.dk_container').first().focus();
+    });
+  </script>
+
+
+<script type="text/javascript">
+			$(function(){
+
+				
+				// Tabs
+				$('#tabs').tabs();
+	
+
+				
+				
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20 
+				});
+				
+				
+				
+			});
+		</script>
+        
+
+
+</head>
+
+<body>
+<div align="center">
+  <div id="overlayContainer"> 
+    <div id="overlayHeaderLoadBalancers">
+			<div class="subHeadContent">Network Name Goes Here <span class="networkEdits"><a href="#">Edit Network Name</a></span><br />
+	  <span class="subHeadContentUnbold">Network description goes here and can continue all the way to at least here if needed </span><span class="networkEdits"><a href="#">Edit Network Description</a></span></div>
+   	</div>
+    
+<img src="images/OverlayBlueLine.jpg" />                            
+
+
+			<div id="overlayNetworkTopContent">
+            
+            		<div class="tabHeader">
+		Add Server Farm
+		  <div class="tabHeaderButton"><a href="#"><img src="images/buttonBackToLoadBalancers.png" alt="Add Server Farm" border="0" /></a></div>
+        </div>
+				        
+       <div class="singleLineEntry"> 
+            	<div class="singleLineEntrySegmentFormText" style="width:120px">
+                Name
+                </div>
+        		<div class="singleLineEntrySegment" style="width:230px">  
+           	      <input name="ServerFarmName" type="text" class="form-text3" value="Server Farm Name Here" maxlength="55" />      
+                </div>
+      </div>
+           
+                  <div class="singleLineEntry"> 
+            	<div class="singleLineEntrySegmentFormText" style="width:120px">
+                Predictor
+                </div>
+        		<div class="singleLineEntrySegment" style="width:130px">  
+               	   <select name="VIPipAddress" class="default" tabindex="7">
+					 <option value="">Least Connections</option>
+					 <option value="Any">Round Robin</option>
+          										
+				   </select>      	                     
+                </div>
+                
+           </div>
+           
+           <div class="singleLineEntry"> 
+            	<div class="singleLineEntrySegmentFormText" style="width:120px">
+                Initial Real Server</div>
+        		<div class="singleLineEntrySegment" style="width:150px">  
+               	   <select name="VIPtargetType" class="default" tabindex="7">
+					 <option value="">Some Server Entry </option>
+					 <option value="Any">Another Server Entry </option>
+          										
+				   </select>      	     
+                </div>
+           </div>
+           
+           <div class="singleLineEntry"> 
+            	<div class="singleLineEntrySegmentFormText" style="width:120px">Real Server Port</div>
+        		<div class="singleLineEntrySegment" style="width:90px">  
+               	   <input name="VIPinservice" type="radio" value="inservice" />  
+               	   Use Port  
+                   </div>
+                   <div class="singleLineEntrySegment" style="width:230px"> 
+               	   <input type="number" name="position" min="1" max="5" class="form-text3" value="position toggle fields" maxlength="55" /> 
+                  </div>
+                    <div class="singleLineEntrySegment" style="width:120px"> 
+                    <input name="VIPoutofService" type="radio" value="outofservice" />
+Use Any Port</div>
+                </div>
+                
+                           <div class="singleLineEntry"> 
+            	<div class="singleLineEntrySegmentFormText" style="width:120px">Initial Probe</div>
+        		<div class="singleLineEntrySegment" style="width:90px">  
+               	   <input name="VIPinservice" type="radio" value="inservice" />  
+               	   Use Probe  
+                   </div>
+                   <div class="singleLineEntrySegment" style="width:170px"> 
+					<select name="ServerFarmProbe" class="default" tabindex="7">
+					 <option value="">TCP </option>
+					 <option value="Any">Another Server Entry </option>
+          										
+				   </select>      	                       </div>
+                    <div class="singleLineEntrySegment" style="width:120px"> 
+                    <input name="VIPoutofService" type="radio" value="outofservice" />
+					No Initial Probe</div>
+                </div>
+         
+          </div>
+           
+          
+          <div style="padding-bottom:10px"></div>
+               <div id="formSubmitContainer2">
+				 <a href="#"><img src="images/buttonApplyServerFarm.png" alt="Apply New Server Farm" width="240" height="32" border="0" /></a>
+                 <a href="#"><img src="images/cancelrule.png" alt="Cancel" width="140" height="32" border="0" /></a> </div> 
+           
+        
+  </div><!--end overlay container -->
+</div>
+</div>
+</body>
+</html>

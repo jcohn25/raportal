@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="tools/css/dropkick.css" type="text/css">
+<script type="text/javascript" src="tools/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="tools/js/jquery.tinyscrollbar.js"></script>
+<script src="tools/js/jquery.dropkick-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="tools/js/jquery-ui-1.8.18.custom.min.js"></script>
+<link type="text/css" href="tools/css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+<link type="text/css" href="tools/css/scrollbar.css" rel="stylesheet" />	
+<link type="text/css" href="tools/css/overlays.css" rel="stylesheet" />	
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+				
+		$('#scrollbar1').tinyscrollbar();
+		
+		$('#scrollbarshort').tinyscrollbar();
+		
+		$('#scrollbarfarms').tinyscrollbar();
+
+
+		
+	});
+</script>	
+		
+
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+      $('.default').dropkick();
+
+      $('.black').dropkick({
+        theme : 'black'
+      });
+
+      $('.change').dropkick({
+        change: function (value, label) {
+          alert('You picked: ' + label + ':' + value);
+        }
+      });
+
+      $('.existing_event').dropkick({
+        change: function () {
+          $(this).change();
+        }
+      });
+
+      $('.custom_theme').dropkick({
+        theme: 'black',
+        change: function (value, label) {
+          $(this).dropkick('theme', value);
+        }
+      });
+
+      $('.dk_container').first().focus();
+    });
+  </script>
+
+
+<script type="text/javascript">
+			$(function(){
+
+				
+				// Tabs
+				$('#tabs').tabs();
+	
+
+				
+				
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20 
+				});
+				
+				
+				
+			});
+		</script>
+        
+
+
+</head>
+
+<body>
+<div align="center">
+  <div id="overlayContainer"> 
+    <div id="overlayHeaderIPs">
+			<div class="subHeadContent">Network Name Goes Here <span class="networkEdits"><a href="#">Edit Network Name</a></span><br />
+	  <span class="subHeadContentUnbold">Network description goes here and can continue all the way to at least here if needed </span><span class="networkEdits"><a href="#">Edit Network Description</a></span></div>
+   	</div>
+    
+<img src="images/OverlayBlueLine.jpg" />                            
+
+			<div id="overlayNetworkTopContent">
+				 <div id="overlayTabContainer">
+
+
+        
+        		<div id="privateIP"><span class="boldName">Private IPs</span><br />
+			xxx.xxx.xxx.xxx <span class="networkTags">to</span> xxx.xxx.xxx.xxx</div>
+            <div id="overlayNetworkActionIcons"> <div style="padding-bottom:10px;"></div>
+            <img src="images/rootaccesNetworksPublicIPButton.jpg" width="190" height="30" /></div>
+     <span class="boldName">
+        Public IPs         </span>
+            
+             <div id="scrollbar1">
+	<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+	<div class="viewport">
+		<div class="overview">
+            
+            
+        		<div class="listedIPContainer">
+						<div class="listedIP">
+       						<span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span> to <span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span>
+                        </div>
+                        <div class="loadBalanceControls"><span class="boldNameSmall">Load Balancing </span>
+                              <form id="form1" name="form1" method="post" action="">
+                                <label>
+                                <input type="radio" name="radio" id="disabled" value="disabled" />
+                                </label>
+                              Enabled
+                              <label>
+                              <input type="radio" name="radio" id="Disabled" value="Disabled" />
+                              </label>
+                               Disabled
+                              </form>
+                        </div> 
+						<div id="deleteIconContainerLow">
+ 							<a href="#" id="deleteButton">	 </a>                  		
+                        </div>
+                </div><!--end listed ip container -->
+               
+
+        		<div class="listedIPContainer">
+						<div class="listedIP">
+       						<span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span> to <span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span>
+                        </div>
+                        <div class="loadBalanceControls"><span class="boldNameSmall">Load Balancing </span>
+                              <form id="form1" name="form1" method="post" action="">
+                                <label>
+                                <input type="radio" name="radio" id="disabled" value="disabled" />
+                                </label>
+                              Enabled
+                              <label>
+                              <input type="radio" name="radio" id="Disabled" value="Disabled" />
+                              </label>
+                               Disabled
+                              </form>
+                        </div> 
+						<div id="deleteIconContainerLow">
+ 							<a href="#" id="deleteButton">	 </a>                  		
+                        </div>
+                </div><!--end listed ip container -->
+               
+               
+<div class="listedIPContainer">
+						<div class="listedIP">
+       						<span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span> to <span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span>
+                        </div>
+                        <div class="loadBalanceControls"><span class="boldNameSmall">Load Balancing </span>
+                              <form id="form1" name="form1" method="post" action="">
+                                <label>
+                                <input type="radio" name="radio" id="disabled" value="disabled" />
+                                </label>
+                              Enabled
+                              <label>
+                              <input type="radio" name="radio" id="Disabled" value="Disabled" />
+                              </label>
+                               Disabled
+                              </form>
+                        </div> 
+						<div id="deleteIconContainerLow">
+ 							<a href="#" id="deleteButton">	 </a>                  		
+                        </div>
+                </div><!--end listed ip container -->
+               
+
+        		<div class="listedIPContainer">
+						<div class="listedIP">
+       						<span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span> to <span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span>
+                        </div>
+                        <div class="loadBalanceControls"><span class="boldNameSmall">Load Balancing </span>
+                              <form id="form1" name="form1" method="post" action="">
+                                <label>
+                                <input type="radio" name="radio" id="disabled" value="disabled" />
+                                </label>
+                              Enabled
+                              <label>
+                              <input type="radio" name="radio" id="Disabled" value="Disabled" />
+                              </label>
+                               Disabled
+                              </form>
+                        </div> 
+						<div id="deleteIconContainerLow">
+ 							<a href="#" id="deleteButton">	 </a>                  		
+                        </div>
+                </div><!--end listed ip container -->
+               
+               
+<div class="listedIPContainer">
+						<div class="listedIP">
+       						<span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span> to <span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span>
+                        </div>
+                        <div class="loadBalanceControls"><span class="boldNameSmall">Load Balancing </span>
+                              <form id="form1" name="form1" method="post" action="">
+                                <label>
+                                <input type="radio" name="radio" id="disabled" value="disabled" />
+                                </label>
+                              Enabled
+                              <label>
+                              <input type="radio" name="radio" id="Disabled" value="Disabled" />
+                              </label>
+                               Disabled
+                              </form>
+                        </div> 
+						<div id="deleteIconContainerLow">
+ 							<a href="#" id="deleteButton">	 </a>                  		
+                        </div>
+                </div><!--end listed ip container -->
+               
+
+        		<div class="listedIPContainer">
+						<div class="listedIP">
+       						<span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span> to <span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span>
+                        </div>
+                        <div class="loadBalanceControls"><span class="boldNameSmall">Load Balancing </span>
+                              <form id="form1" name="form1" method="post" action="">
+                                <label>
+                                <input type="radio" name="radio" id="disabled" value="disabled" />
+                                </label>
+                              Enabled
+                              <label>
+                              <input type="radio" name="radio" id="Disabled" value="Disabled" />
+                              </label>
+                               Disabled
+                              </form>
+                        </div> 
+						<div id="deleteIconContainerLow">
+ 							<a href="#" id="deleteButton">	 </a>                  		
+                        </div>
+                </div><!--end listed ip container -->
+               
+               
+<div class="listedIPContainer">
+						<div class="listedIP">
+       						<span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span> to <span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span>
+                        </div>
+                        <div class="loadBalanceControls"><span class="boldNameSmall">Load Balancing </span>
+                              <form id="form1" name="form1" method="post" action="">
+                                <label>
+                                <input type="radio" name="radio" id="disabled" value="disabled" />
+                                </label>
+                              Enabled
+                              <label>
+                              <input type="radio" name="radio" id="Disabled" value="Disabled" />
+                              </label>
+                               Disabled
+                              </form>
+                        </div> 
+						<div id="deleteIconContainerLow">
+ 							<a href="#" id="deleteButton">	 </a>                  		
+                        </div>
+                </div><!--end listed ip container -->
+               
+
+        		<div class="listedIPContainer">
+						<div class="listedIP">
+       						<span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span> to <span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span>
+                        </div>
+                        <div class="loadBalanceControls"><span class="boldNameSmall">Load Balancing </span>
+                              <form id="form1" name="form1" method="post" action="">
+                                <label>
+                                <input type="radio" name="radio" id="disabled" value="disabled" />
+                                </label>
+                              Enabled
+                              <label>
+                              <input type="radio" name="radio" id="Disabled" value="Disabled" />
+                              </label>
+                               Disabled
+                              </form>
+                        </div> 
+						<div id="deleteIconContainerLow">
+ 							<a href="#" id="deleteButton">	 </a>                  		
+                        </div>
+                </div><!--end listed ip container -->
+               
+<div class="listedIPContainer">
+						<div class="listedIP">
+       						<span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span> to <span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span>
+                        </div>
+                        <div class="loadBalanceControls"><span class="boldNameSmall">Load Balancing </span>
+                              <form id="form1" name="form1" method="post" action="">
+                                <label>
+                                <input type="radio" name="radio" id="disabled" value="disabled" />
+                                </label>
+                              Enabled
+                              <label>
+                              <input type="radio" name="radio" id="Disabled" value="Disabled" />
+                              </label>
+                               Disabled
+                              </form>
+                        </div> 
+						<div id="deleteIconContainerLow">
+ 							<a href="#" id="deleteButton">	 </a>                  		
+                        </div>
+                </div><!--end listed ip container -->
+               
+
+        		<div class="listedIPContainer">
+						<div class="listedIP">
+       						<span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span> to <span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span>
+                        </div>
+                        <div class="loadBalanceControls"><span class="boldNameSmall">Load Balancing </span>
+                              <form id="form1" name="form1" method="post" action="">
+                                <label>
+                                <input type="radio" name="radio" id="disabled" value="disabled" />
+                                </label>
+                              Enabled
+                              <label>
+                              <input type="radio" name="radio" id="Disabled" value="Disabled" />
+                              </label>
+                               Disabled
+                              </form>
+                        </div> 
+						<div id="deleteIconContainerLow">
+ 							<a href="#" id="deleteButton">	 </a>                  		
+                        </div>
+                </div><!--end listed ip container -->
+               
+<div class="listedIPContainer">
+						<div class="listedIP">
+       						<span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span> to <span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span>
+                        </div>
+                        <div class="loadBalanceControls"><span class="boldNameSmall">Load Balancing </span>
+                              <form id="form1" name="form1" method="post" action="">
+                                <label>
+                                <input type="radio" name="radio" id="disabled" value="disabled" />
+                                </label>
+                              Enabled
+                              <label>
+                              <input type="radio" name="radio" id="Disabled" value="Disabled" />
+                              </label>
+                               Disabled
+                              </form>
+                        </div> 
+						<div id="deleteIconContainerLow">
+ 							<a href="#" id="deleteButton">	 </a>                  		
+                        </div>
+                </div><!--end listed ip container -->
+               
+
+        		<div class="listedIPContainer">
+						<div class="listedIP">
+       						<span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span> to <span class="boldNameSmall">XXX.XXX.XXX.XXX.XXX</span>
+                        </div>
+                        <div class="loadBalanceControls"><span class="boldNameSmall">Load Balancing </span>
+                              <form id="form1" name="form1" method="post" action="">
+                                <label>
+                                <input type="radio" name="radio" id="disabled" value="disabled" />
+                                </label>
+                              Enabled
+                              <label>
+                              <input type="radio" name="radio" id="Disabled" value="Disabled" />
+                              </label>
+                               Disabled
+                              </form>
+                        </div> 
+						<div id="deleteIconContainerLow">
+ 							<a href="#" id="deleteButton">	 </a>                  		
+                        </div>
+                </div><!--end listed ip container -->
+               
+               
+                                                            
+               
+                       
+        </div></div></div>
+           
+           
+          
+		</div>	
+	</div>
+  </div><!--end overlay container -->
+</div>
+</div>
+</body>
+</html>

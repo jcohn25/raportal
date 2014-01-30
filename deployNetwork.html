@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="tools/css/dropkick.css" type="text/css">
+<script type="text/javascript" src="tools/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="tools/js/jquery.tinyscrollbar.js"></script>
+<script src="tools/js/jquery.dropkick-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="tools/js/jquery-ui-1.8.18.custom.min.js"></script>
+<link type="text/css" href="tools/css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+<link type="text/css" href="tools/css/scrollbar.css" rel="stylesheet" />
+<link type="text/css" href="tools/css/overlays.css" rel="stylesheet" />	
+
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+				
+		$('#scrollbar1').tinyscrollbar();
+		
+		$('#scrollbarshort').tinyscrollbar();
+		
+		$('#scrollbarfarms').tinyscrollbar();
+
+		$('#scrollbarpp').tinyscrollbar();
+		
+		$('#scrollbarvip').tinyscrollbar();
+
+
+		
+	});
+</script>	
+		
+
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+      $('.default').dropkick();
+
+      $('.black').dropkick({
+        theme : 'black'
+      });
+
+      $('.change').dropkick({
+        change: function (value, label) {
+          alert('You picked: ' + label + ':' + value);
+        }
+      });
+
+      $('.existing_event').dropkick({
+        change: function () {
+          $(this).change();
+        }
+      });
+
+      $('.custom_theme').dropkick({
+        theme: 'black',
+        change: function (value, label) {
+          $(this).dropkick('theme', value);
+        }
+      });
+
+      $('.dk_container').first().focus();
+    });
+  </script>
+
+
+<script type="text/javascript">
+			$(function(){
+
+				
+				// Tabs
+				$('#tabs').tabs();
+	
+
+				
+				
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20 
+				});
+				
+				
+				
+			});
+		</script>
+        
+
+
+</head>
+
+<body>
+<div align="center">
+  <div id="overlayContainer"> 
+    <div id="overlayHeaderDeployNetwork">
+			<div class="subHeadContent">Please enter a name and description for  your new network<br />
+	  <span class="subHeadContentUnbold">You will be able to further modify the network once deployed. </span></div>
+   	</div>
+    
+<img src="images/OverlayBlueLine.jpg" />                            
+
+
+			
+    <div id="overlayNetworkTopContent">
+     <div class="singleLineEntry">
+      <div class="singleLineEntrySegment" style="width:140px"> *Network Name
+        </div>  
+
+      <div class="singleLineEntrySegment" style="width:305px"> 
+      <input name="deployServerName" type="text" class="form-text" value="Insert Network Name " maxlength="55" /> 
+      </div>
+     </div>
+      
+           <div class="singleLineEntry">
+
+      <div class="singleLineEntrySegment" style="width:140px"> Network Description
+        </div>  
+        
+        <div class="singleLineEntrySegment" style="width:305px"> 
+                	   <textarea name="deployServerDescription" cols="30" rows="3" class="form-text-multiline">Insert Network Description</textarea> 
+
+      </div>
+      </div>
+      <div style="padding-bottom:50px"></div>
+       <div class="singleLineEntry">
+      <div class="singleLineEntrySegment" style="width:100px"> 
+        </div>  
+
+      <div class="singleLineEntrySegment" style="width:375px"> 
+      <img src="images/deployNetworkStartButton.png" /><img src="images/deployNetworkCancel.jpg" />
+      </div>
+     </div>
+      
+
+              
+           
+        
+  </div><!--end overlay container -->
+</div>
+</div>
+</body>
+</html>

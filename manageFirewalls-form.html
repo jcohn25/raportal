@@ -1,0 +1,1039 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+
+<link rel="stylesheet" href="tools/css/dropkick.css" type="text/css">
+<script type="text/javascript" src="tools/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="tools/js/jquery.tinyscrollbar.js"></script>
+<script src="tools/js/jquery.dropkick-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="tools/js/jquery-ui-1.8.18.custom.min.js"></script>
+<link type="text/css" href="tools/css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+<link type="text/css" href="tools/css/scrollbar.css" rel="stylesheet" />	
+
+
+<script type="text/javascript">
+	$(document).ready(function(){
+				
+		$('#scrollbar1').tinyscrollbar();
+		
+		$('#scrollbarshort').tinyscrollbar();
+		
+		$('#scrollbarfarms').tinyscrollbar();
+
+		$('#scrollbarpp').tinyscrollbar();
+		
+		$('#scrollbarvip').tinyscrollbar();
+
+
+		
+	});
+</script>	
+		
+
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+      $('.default').dropkick();
+
+      $('.black').dropkick({
+        theme : 'black'
+      });
+
+      $('.change').dropkick({
+        change: function (value, label) {
+          alert('You picked: ' + label + ':' + value);
+        }
+      });
+
+      $('.existing_event').dropkick({
+        change: function () {
+          $(this).change();
+        }
+      });
+
+      $('.custom_theme').dropkick({
+        theme: 'black',
+        change: function (value, label) {
+          $(this).dropkick('theme', value);
+        }
+      });
+
+      $('.dk_container').first().focus();
+    });
+  </script>
+
+
+<script type="text/javascript">
+			$(function(){
+
+				
+				// Tabs
+				$('#tabs').tabs();
+	
+
+				
+				
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20 
+				});
+				
+				
+				
+			});
+		</script>
+        
+
+<style type="text/css">
+<!--
+
+*
+{
+    margin:0;
+    padding:0;
+}
+
+#overlayContainer {
+	background-color: #fff;
+	height: 450px;
+	width: 800px;
+	font-family:Arial, Helvetica, sans-serif;
+	text-align:left;
+}
+#overlayHeader {
+	background-color: #fff;
+	height: 100px;
+	width: 800px;
+	background-image: url(images/overlayHeaderFirewalls.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	position: relative;
+}
+
+#overlayHeader .subHeadContent{
+	height: 80px;
+	width: 704px;
+	height: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bolder;
+	color: #1D3867;
+	position: absolute;
+	top: 64px;
+	right: 10px;
+	text-align: left;
+}
+
+#overlayHeader .subHeadContentUnbold{
+	
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #1D3867;
+	
+}
+
+#overlayNetworkTopContent {
+	background-color: #fff;
+	width: 715px;
+	padding-top: 5px;
+	padding-left: 85px;
+}
+
+#overlayNetworkNameDescription {
+	background-color: #fff;
+	height: 140px;
+	width: 420px;
+	display: inline-block;
+	float: left;
+}
+
+#overlayNetworkActionIcons {
+	height: 140px;
+	width: 100px;
+	display: inline-block;
+	float: left;
+	padding-left: 50px;
+}
+
+#overlayTabContainer {
+	height: 340px;
+	width: 700px;
+	display: block;
+	float: left;
+	padding-left: 0px;
+}
+
+.networkName
+{
+	width:300px;
+	text-align: left;
+	display: block;
+	height: 55px;
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	color: #1D3867;
+}
+
+.networkDescription
+{
+	width:370px;
+	text-align: left;
+	display: block;
+	height: 55px;
+	float: left;
+	font-size: 12px;
+	font-weight: normal;
+	color: #1D3867;
+	padding-top: 10px;
+	line-height: 15px;
+}
+
+
+
+.networkTags
+{
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	color: #666666;
+}
+
+.networkEdits a
+{
+	text-align: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	font-weight: bold;
+	color: #006cb3;
+	text-decoration: underline;
+}
+
+#privateIP
+{
+	width:666px;
+	display: block;
+	float: left;
+}
+
+#publicIP
+{
+	width:666px;
+	display: block;
+	padding-top: 10px;
+	float: left;
+}
+
+.boldName
+{
+	font-size: 18px;
+	font-weight: bold;
+	color: #1D3867;
+}
+
+.tabHeader {
+	font-size: 26px;
+	font-weight: bold;
+	color: #1D3867;
+	display:block;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	height: 26px;
+	width: 690px;
+}
+
+.tabHeaderButton {
+	display:block;
+	height: 30px;
+	width: 200px;
+	padding-right:20px;
+	float:right;
+	padding-top: 10px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.tabHeaderButtonNoPad {
+	display:block;
+	height: 30px;
+	width: 200px;
+	float:right;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+
+.singleLineEntry {
+	font-size: 12px;
+	font-weight: bold;
+	color: #1D3867;
+	display:block;
+	width:700px;
+	height:45px;
+	padding-bottom: 10px;
+}
+
+.singleLineEntrySegment {
+	display:inline-block;
+	height:30px;
+	margin-top:10px;
+	float: left;
+	padding-right: 10px;
+}
+
+.singleLineEntrySegmentDouble {
+	display:inline-block;
+	height:30px;
+	margin-top:0px;
+	float: left;
+	padding-right: 10px;
+	text-align:right;
+}
+
+.dk_container {
+    font-family: 'Helvetica',Arial,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+.realServerListContainer {
+	display:block;
+	width:700px;
+	height:250px;
+	overflow: auto;
+}
+
+.listedContainer
+{
+	width:690px;
+	height:35px;
+	display:block;
+	color:#1D3867;
+	text-align:left;
+	text-decoration:none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	padding-top: 5px;
+	float: left;
+	background-image: url(images/ipListBackGround.jpg);
+	background-repeat: no-repeat;
+	background-position: 0px -5px;
+}
+
+#deleteIconContainer {
+	text-align:left;
+	width:30px;
+	height: 30px;
+	float: left;
+	display: block;
+	margin-top: -13px;
+	padding-right: 10px;
+}
+
+#deleteButton  {
+	display: inline-block;
+	 background-attachment: scroll;
+	width:30px;
+	height:35px;
+	background-color: transparent;
+	background-image: url(images/buttonIPDelete.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a#deleteButton:hover {
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(images/buttonIPDelete.png);
+	background-repeat: no-repeat;
+	background-position:  0 -40px;
+}
+a#deleteButton:active {
+   background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(images/buttonIPDelete.png);
+	background-repeat: no-repeat;
+    background-position:  0 -40px;
+}
+
+#editButton  {
+	display: inline-block;
+	 background-attachment: scroll;
+	width:30px;
+	height:35px;
+	background-color: transparent;
+	background-image: url(images/buttonIPEdit.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+}
+a#editButton:hover {
+	background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(images/buttonIPEdit.png);
+	background-repeat: no-repeat;
+	background-position:  0 -40px;
+}
+a#editButton:active {
+   background-attachment: scroll;
+	background-color: transparent;
+	background-image: url(images/buttonIPEdit.png);
+	background-repeat: no-repeat;
+    background-position:  0 -40px;
+}
+
+.probesContainer {
+	display:block;
+	width:700px;
+	height:350px;
+	overflow: auto;
+}
+
+#addACL {
+	display:block;
+	width:700px;
+	height:320px;
+}
+
+.smallbold
+{
+	font-size: 12px;
+	font-weight: bold;
+	color: #1D3867;
+}
+
+#formLineContainer {
+	width:700px;
+	height:35px;
+	font:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#1D3867;
+	display: block;
+	float: left;
+}
+
+#formSubmitContainer {
+	width:350px;
+	height:35px;
+	font:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	color:#1D3867;
+	display: block;
+	float: left;
+	padding-left: 350px;
+	padding-top: 10px;
+}
+
+.fieldnames {
+	width:190px;
+	font:Arial, Helvetica, sans-serif;
+	font-size:15px;
+	font-weight:bold;
+	color:#1D3867;
+	display: inline-block;
+	float: left;
+	text-align: left;
+	padding-right: 0px;
+}
+
+.formfieldContainer {
+	width:500px;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	display: inline-block;
+	float: left;
+	height: 25px;
+}
+
+.form-text {
+	border: 1px solid #5b9ecd;
+	width: 300px;
+	height: 20px;
+	font-size: 14px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: #333333;
+	background-color: #eaf4fc;
+	padding-top: 2px;
+	padding-right: 2px;
+	padding-bottom: 2px;
+	padding-left: 2px;
+}
+
+
+-->
+</style>
+</head>
+
+<body>
+<div align="center">
+  <div id="overlayContainer"> 
+    <div id="overlayHeader">
+			<div class="subHeadContent">Network Name Goes Here <span class="networkEdits"><a href="#">Edit Network Name</a></span><br />
+	  <span class="subHeadContentUnbold">Network description goes here and can continue all the way to at least here if needed </span><span class="networkEdits"><a href="#">Edit Network Description</a></span></div>
+   	</div>
+    
+<img src="images/OverlayBlueLine.jpg" />                            
+
+
+			<div id="overlayNetworkTopContent">
+				 <div id="overlayTabContainer">
+           <!--tabs commented out  <div id="tabs">
+	<ul>
+		<li><a href="#tabs-1">Inbound</a></li>
+		<li><a href="#tabs-2">Outbound</a></li>
+        <li><a href="#tabs-3">Add ACL Rule</a></li>
+	
+
+
+	</ul>
+	<div id="tabs-1">
+		<div class="tabHeader"> Inbound</div>
+     
+        
+        <div id="scrollbarshort">
+	<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+	<div class="viewport">
+		<div class="overview">
+        
+        
+        
+        	<div class="listedContainer"> 
+            	<div class="singleLineEntrySegment" style="width:30px">  
+                	101
+           	    </div>
+        		<div class="singleLineEntrySegment" style="width:70px">  
+               	    default 101       	     
+                </div>
+				<div class="singleLineEntrySegment" style="width:70px">  
+               	    type:<span class="smallbold"> Permit</span>      	     
+                </div> 
+				<div class="singleLineEntrySegment" style="width:80px">  
+               	    protocol:<span class="smallbold"> TCP</span>        	     
+                </div>        		
+                <div class="singleLineEntrySegment" style="width:120px">  
+					port:<span class="smallbold"> port equals 443</span>           	    
+                </div>
+                <div class="singleLineEntrySegmentDouble" style="width:190px">
+                      Source IP: <span class="smallbold">XXX.XXX.XXX.XXX</span>
+                        <br />
+                      <span class="boldNameSmall">Destination IP: </span><span class="smallbold">XXX.XXX.XXX.XXX</span>
+                </div>
+                <div class="singleLineEntrySegment" style="width:40px">  
+					<div id="deleteIconContainer">
+                        <a href="#" id="deleteButton">	 </a>
+           			</div>  
+               </div>
+           </div>
+            
+        	<div class="listedContainer"> 
+            	<div class="singleLineEntrySegment" style="width:30px">  
+                	101
+           	    </div>
+        		<div class="singleLineEntrySegment" style="width:70px">  
+               	    default 101       	     
+                </div>
+				<div class="singleLineEntrySegment" style="width:70px">  
+               	    type:<span class="smallbold"> Permit</span>      	     
+                </div> 
+				<div class="singleLineEntrySegment" style="width:80px">  
+               	    protocol:<span class="smallbold"> TCP</span>        	     
+                </div>        		
+                <div class="singleLineEntrySegment" style="width:120px">  
+					port:<span class="smallbold"> port equals 443</span>           	    
+                </div>
+                <div class="singleLineEntrySegmentDouble" style="width:190px">
+                      Source IP: <span class="smallbold">XXX.XXX.XXX.XXX</span>
+                        <br />
+                      <span class="boldNameSmall">Destination IP: </span><span class="smallbold">XXX.XXX.XXX.XXX</span>
+                </div>
+                <div class="singleLineEntrySegment" style="width:40px">  
+					<div id="deleteIconContainer">
+                        <a href="#" id="deleteButton">	 </a>
+           			</div>  
+               </div>
+           </div>
+           
+        	<div class="listedContainer"> 
+            	<div class="singleLineEntrySegment" style="width:30px">  
+                	101
+           	    </div>
+        		<div class="singleLineEntrySegment" style="width:70px">  
+               	    default 101       	     
+                </div>
+				<div class="singleLineEntrySegment" style="width:70px">  
+               	    type:<span class="smallbold"> Permit</span>      	     
+                </div> 
+				<div class="singleLineEntrySegment" style="width:80px">  
+               	    protocol:<span class="smallbold"> TCP</span>        	     
+                </div>        		
+                <div class="singleLineEntrySegment" style="width:120px">  
+					port:<span class="smallbold"> port equals 443</span>           	    
+                </div>
+                <div class="singleLineEntrySegmentDouble" style="width:190px">
+                      Source IP: <span class="smallbold">XXX.XXX.XXX.XXX</span>
+                        <br />
+                      <span class="boldNameSmall">Destination IP: </span><span class="smallbold">XXX.XXX.XXX.XXX</span>
+                </div>
+                <div class="singleLineEntrySegment" style="width:40px">  
+					<div id="deleteIconContainer">
+                        <a href="#" id="deleteButton">	 </a>
+           			</div>  
+               </div>
+           </div>
+           
+        	<div class="listedContainer"> 
+            	<div class="singleLineEntrySegment" style="width:30px">  
+                	101
+           	    </div>
+        		<div class="singleLineEntrySegment" style="width:70px">  
+               	    default 101       	     
+                </div>
+				<div class="singleLineEntrySegment" style="width:70px">  
+               	    type:<span class="smallbold"> Permit</span>      	     
+                </div> 
+				<div class="singleLineEntrySegment" style="width:80px">  
+               	    protocol:<span class="smallbold"> TCP</span>        	     
+                </div>        		
+                <div class="singleLineEntrySegment" style="width:120px">  
+					port:<span class="smallbold"> port equals 443</span>           	    
+                </div>
+                <div class="singleLineEntrySegmentDouble" style="width:190px">
+                      Source IP: <span class="smallbold">XXX.XXX.XXX.XXX</span>
+                        <br />
+                      <span class="boldNameSmall">Destination IP: </span><span class="smallbold">XXX.XXX.XXX.XXX</span>
+                </div>
+                <div class="singleLineEntrySegment" style="width:40px">  
+					<div id="deleteIconContainer">
+                        <a href="#" id="deleteButton">	 </a>
+           			</div>  
+               </div>
+           </div>
+           
+        	<div class="listedContainer"> 
+            	<div class="singleLineEntrySegment" style="width:30px">  
+                	101
+           	    </div>
+        		<div class="singleLineEntrySegment" style="width:70px">  
+               	    default 101       	     
+                </div>
+				<div class="singleLineEntrySegment" style="width:70px">  
+               	    type:<span class="smallbold"> Permit</span>      	     
+                </div> 
+				<div class="singleLineEntrySegment" style="width:80px">  
+               	    protocol:<span class="smallbold"> TCP</span>        	     
+                </div>        		
+                <div class="singleLineEntrySegment" style="width:120px">  
+					port:<span class="smallbold"> port equals 443</span>           	    
+                </div>
+                <div class="singleLineEntrySegmentDouble" style="width:190px">
+                      Source IP: <span class="smallbold">XXX.XXX.XXX.XXX</span>
+                        <br />
+                      <span class="boldNameSmall">Destination IP: </span><span class="smallbold">XXX.XXX.XXX.XXX</span>
+                </div>
+                <div class="singleLineEntrySegment" style="width:40px">  
+					<div id="deleteIconContainer">
+                        <a href="#" id="deleteButton">	 </a>
+           			</div>  
+               </div>
+           </div>
+           
+        	<div class="listedContainer"> 
+            	<div class="singleLineEntrySegment" style="width:30px">  
+                	101
+           	    </div>
+        		<div class="singleLineEntrySegment" style="width:70px">  
+               	    default 101       	     
+                </div>
+				<div class="singleLineEntrySegment" style="width:70px">  
+               	    type:<span class="smallbold"> Permit</span>      	     
+                </div> 
+				<div class="singleLineEntrySegment" style="width:80px">  
+               	    protocol:<span class="smallbold"> TCP</span>        	     
+                </div>        		
+                <div class="singleLineEntrySegment" style="width:120px">  
+					port:<span class="smallbold"> port equals 443</span>           	    
+                </div>
+                <div class="singleLineEntrySegmentDouble" style="width:190px">
+                      Source IP: <span class="smallbold">XXX.XXX.XXX.XXX</span>
+                        <br />
+                      <span class="boldNameSmall">Destination IP: </span><span class="smallbold">XXX.XXX.XXX.XXX</span>
+                </div>
+                <div class="singleLineEntrySegment" style="width:40px">  
+					<div id="deleteIconContainer">
+                        <a href="#" id="deleteButton">	 </a>
+           			</div>  
+               </div>
+           </div>
+           
+        	<div class="listedContainer"> 
+            	<div class="singleLineEntrySegment" style="width:30px">  
+                	101
+           	    </div>
+        		<div class="singleLineEntrySegment" style="width:70px">  
+               	    default 101       	     
+                </div>
+				<div class="singleLineEntrySegment" style="width:70px">  
+               	    type:<span class="smallbold"> Permit</span>      	     
+                </div> 
+				<div class="singleLineEntrySegment" style="width:80px">  
+               	    protocol:<span class="smallbold"> TCP</span>        	     
+                </div>        		
+                <div class="singleLineEntrySegment" style="width:120px">  
+					port:<span class="smallbold"> port equals 443</span>           	    
+                </div>
+                <div class="singleLineEntrySegmentDouble" style="width:190px">
+                      Source IP: <span class="smallbold">XXX.XXX.XXX.XXX</span>
+                        <br />
+                      <span class="boldNameSmall">Destination IP: </span><span class="smallbold">XXX.XXX.XXX.XXX</span>
+                </div>
+                <div class="singleLineEntrySegment" style="width:40px">  
+					<div id="deleteIconContainer">
+                        <a href="#" id="deleteButton">	 </a>
+           			</div>  
+               </div>
+           </div>           
+                                                
+		</div>
+	</div>
+</div>	
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </div>  
+	<div id="tabs-2">
+		<div class="tabHeader">
+		Outbound 
+        </div>
+        
+              <div id="scrollbar1">
+	<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+	<div class="viewport">
+		<div class="overview">
+        
+        
+        
+        	<div class="listedContainer"> 
+            	<div class="singleLineEntrySegment" style="width:30px">  
+                	101
+           	    </div>
+        		<div class="singleLineEntrySegment" style="width:70px">  
+               	    default 101       	     
+                </div>
+				<div class="singleLineEntrySegment" style="width:70px">  
+               	    type:<span class="smallbold"> Permit</span>      	     
+                </div> 
+				<div class="singleLineEntrySegment" style="width:80px">  
+               	    protocol:<span class="smallbold"> TCP</span>        	     
+                </div>        		
+                <div class="singleLineEntrySegment" style="width:120px">  
+					port:<span class="smallbold"> port equals 443</span>           	    
+                </div>
+                <div class="singleLineEntrySegmentDouble" style="width:190px">
+                      Source IP: <span class="smallbold">XXX.XXX.XXX.XXX</span>
+                        <br />
+                      <span class="boldNameSmall">Destination IP: </span><span class="smallbold">XXX.XXX.XXX.XXX</span>
+                </div>
+                <div class="singleLineEntrySegment" style="width:40px">  
+					<div id="deleteIconContainer">
+                        <a href="#" id="deleteButton">	 </a>
+           			</div>  
+               </div>
+           </div>
+            
+        	<div class="listedContainer"> 
+            	<div class="singleLineEntrySegment" style="width:30px">  
+                	101
+           	    </div>
+        		<div class="singleLineEntrySegment" style="width:70px">  
+               	    default 101       	     
+                </div>
+				<div class="singleLineEntrySegment" style="width:70px">  
+               	    type:<span class="smallbold"> Permit</span>      	     
+                </div> 
+				<div class="singleLineEntrySegment" style="width:80px">  
+               	    protocol:<span class="smallbold"> TCP</span>        	     
+                </div>        		
+                <div class="singleLineEntrySegment" style="width:120px">  
+					port:<span class="smallbold"> port equals 443</span>           	    
+                </div>
+                <div class="singleLineEntrySegmentDouble" style="width:190px">
+                      Source IP: <span class="smallbold">XXX.XXX.XXX.XXX</span>
+                        <br />
+                      <span class="boldNameSmall">Destination IP: </span><span class="smallbold">XXX.XXX.XXX.XXX</span>
+                </div>
+                <div class="singleLineEntrySegment" style="width:40px">  
+					<div id="deleteIconContainer">
+                        <a href="#" id="deleteButton">	 </a>
+           			</div>  
+               </div>
+           </div>
+           
+        	<div class="listedContainer"> 
+            	<div class="singleLineEntrySegment" style="width:30px">  
+                	101
+           	    </div>
+        		<div class="singleLineEntrySegment" style="width:70px">  
+               	    default 101       	     
+                </div>
+				<div class="singleLineEntrySegment" style="width:70px">  
+               	    type:<span class="smallbold"> Permit</span>      	     
+                </div> 
+				<div class="singleLineEntrySegment" style="width:80px">  
+               	    protocol:<span class="smallbold"> TCP</span>        	     
+                </div>        		
+                <div class="singleLineEntrySegment" style="width:120px">  
+					port:<span class="smallbold"> port equals 443</span>           	    
+                </div>
+                <div class="singleLineEntrySegmentDouble" style="width:190px">
+                      Source IP: <span class="smallbold">XXX.XXX.XXX.XXX</span>
+                        <br />
+                      <span class="boldNameSmall">Destination IP: </span><span class="smallbold">XXX.XXX.XXX.XXX</span>
+                </div>
+                <div class="singleLineEntrySegment" style="width:40px">  
+					<div id="deleteIconContainer">
+                        <a href="#" id="deleteButton">	 </a>
+           			</div>  
+               </div>
+           </div>
+           
+        	<div class="listedContainer"> 
+            	<div class="singleLineEntrySegment" style="width:30px">  
+                	101
+           	    </div>
+        		<div class="singleLineEntrySegment" style="width:70px">  
+               	    default 101       	     
+                </div>
+				<div class="singleLineEntrySegment" style="width:70px">  
+               	    type:<span class="smallbold"> Permit</span>      	     
+                </div> 
+				<div class="singleLineEntrySegment" style="width:80px">  
+               	    protocol:<span class="smallbold"> TCP</span>        	     
+                </div>        		
+                <div class="singleLineEntrySegment" style="width:120px">  
+					port:<span class="smallbold"> port equals 443</span>           	    
+                </div>
+                <div class="singleLineEntrySegmentDouble" style="width:190px">
+                      Source IP: <span class="smallbold">XXX.XXX.XXX.XXX</span>
+                        <br />
+                      <span class="boldNameSmall">Destination IP: </span><span class="smallbold">XXX.XXX.XXX.XXX</span>
+                </div>
+                <div class="singleLineEntrySegment" style="width:40px">  
+					<div id="deleteIconContainer">
+                        <a href="#" id="deleteButton">	 </a>
+           			</div>  
+               </div>
+           </div>
+           
+        	<div class="listedContainer"> 
+            	<div class="singleLineEntrySegment" style="width:30px">  
+                	101
+           	    </div>
+        		<div class="singleLineEntrySegment" style="width:70px">  
+               	    default 101       	     
+                </div>
+				<div class="singleLineEntrySegment" style="width:70px">  
+               	    type:<span class="smallbold"> Permit</span>      	     
+                </div> 
+				<div class="singleLineEntrySegment" style="width:80px">  
+               	    protocol:<span class="smallbold"> TCP</span>        	     
+                </div>        		
+                <div class="singleLineEntrySegment" style="width:120px">  
+					port:<span class="smallbold"> port equals 443</span>           	    
+                </div>
+                <div class="singleLineEntrySegmentDouble" style="width:190px">
+                      Source IP: <span class="smallbold">XXX.XXX.XXX.XXX</span>
+                        <br />
+                      <span class="boldNameSmall">Destination IP: </span><span class="smallbold">XXX.XXX.XXX.XXX</span>
+                </div>
+                <div class="singleLineEntrySegment" style="width:40px">  
+					<div id="deleteIconContainer">
+                        <a href="#" id="deleteButton">	 </a>
+           			</div>  
+               </div>
+           </div>
+           
+        	<div class="listedContainer"> 
+            	<div class="singleLineEntrySegment" style="width:30px">  
+                	101
+           	    </div>
+        		<div class="singleLineEntrySegment" style="width:70px">  
+               	    default 101       	     
+                </div>
+				<div class="singleLineEntrySegment" style="width:70px">  
+               	    type:<span class="smallbold"> Permit</span>      	     
+                </div> 
+				<div class="singleLineEntrySegment" style="width:80px">  
+               	    protocol:<span class="smallbold"> TCP</span>        	     
+                </div>        		
+                <div class="singleLineEntrySegment" style="width:120px">  
+					port:<span class="smallbold"> port equals 443</span>           	    
+                </div>
+                <div class="singleLineEntrySegmentDouble" style="width:190px">
+                      Source IP: <span class="smallbold">XXX.XXX.XXX.XXX</span>
+                        <br />
+                      <span class="boldNameSmall">Destination IP: </span><span class="smallbold">XXX.XXX.XXX.XXX</span>
+                </div>
+                <div class="singleLineEntrySegment" style="width:40px">  
+					<div id="deleteIconContainer">
+                        <a href="#" id="deleteButton">	 </a>
+           			</div>  
+               </div>
+           </div>
+           
+        	<div class="listedContainer"> 
+            	<div class="singleLineEntrySegment" style="width:30px">  
+                	101
+           	    </div>
+        		<div class="singleLineEntrySegment" style="width:70px">  
+               	    default 101       	     
+                </div>
+				<div class="singleLineEntrySegment" style="width:70px">  
+               	    type:<span class="smallbold"> Permit</span>      	     
+                </div> 
+				<div class="singleLineEntrySegment" style="width:80px">  
+               	    protocol:<span class="smallbold"> TCP</span>        	     
+                </div>        		
+                <div class="singleLineEntrySegment" style="width:120px">  
+					port:<span class="smallbold"> port equals 443</span>           	    
+                </div>
+                <div class="singleLineEntrySegmentDouble" style="width:190px">
+                      Source IP: <span class="smallbold">XXX.XXX.XXX.XXX</span>
+                        <br />
+                      <span class="boldNameSmall">Destination IP: </span><span class="smallbold">XXX.XXX.XXX.XXX</span>
+                </div>
+                <div class="singleLineEntrySegment" style="width:40px">  
+					<div id="deleteIconContainer">
+                        <a href="#" id="deleteButton">	 </a>
+           			</div>  
+               </div>
+           </div>           
+                                                
+		</div>
+	</div>
+</div>	
+
+	
+        
+        
+        	
+    </div>
+</div> <!--end hidden tabs -->
+<div id="addACL">
+		<div class="tabHeader">
+		Add Acl Rule<div class="tabHeaderButtonNoPad"><a href="#"><img src="images/backToAclRules.png" alt="Add Server Farm" border="0" /></a></div>
+        </div>
+        
+        
+                   <div id="formLineContainer">
+			     <div class="fieldnames"> Rule Name                 </div>
+                 <div class="formfieldContainer"><input name="ruleName" type="text" class="form-text" value="Insert Rule Name Here" maxlength="55" /> </div>
+               </div>  
+               
+                <div id="formLineContainer">
+			     <div class="fieldnames"> Position                 </div>
+                 <div class="formfieldContainer"><input type="number" name="position" min="1" max="5" class="form-text" value="position toggle fields" maxlength="55" /> </div>
+               </div> 
+                 <div id="formLineContainer">
+			     <div class="fieldnames"> Direction                 </div>
+                 <div class="formfieldContainer"><input name="inbound" type="radio" value="" />
+                 Inbound 
+                   <label>
+                   <input type="radio" name="radio" id="outbound" value="outbound" />
+                   </label>
+                   Outbound
+                   <img src="images/verticalDivider.jpg" width="30" height="20" />
+                   <input type="radio" name="radio" id="permit" value="permit" />
+                   Permit 
+                  <input type="radio" name="radio" id="deny" value="deny" />
+                   Deny                  </div>
+               
+                 <div id="formLineContainer">
+                   <div style="padding-bottom:10px"></div>
+			     <div class="fieldnames"> Type                 </div>
+                
+                 <div class="formfieldContainer">
+                 										
+
+                                                         <select name="type" class="default" tabindex="2">
+          												<option value="">TCP</option>
+          												<option value="ICMP">ICMP</option>
+											 </select>
+                  </div>
+               </div> 
+               
+               
+               <div id="formLineContainer">
+                   <div style="padding-bottom:10px"></div>
+			     <div class="fieldnames"> Source IP Address/es                 </div>
+                
+                 <div class="formfieldContainer">
+                 										
+
+                   <select name="source" class="default" tabindex="7">
+					 <option value="">Specific</option>
+					 <option value="Any">Any</option>
+				   </select>
+                    &nbsp;<input name="source address" type="text" class="form-text" value="source address goes here" maxlength="55" />
+                 </div>
+               </div> 
+               
+                              <div id="formLineContainer">
+                   <div style="padding-bottom:10px"></div>
+			     <div class="fieldnames"> Destination IP Address/es                 </div>
+                
+                 <div class="formfieldContainer">
+                 										
+
+                   <select name="Destination" class="default" tabindex="6">
+					 <option value="">Specific</option>
+					 <option value="Any">Any</option>
+				   </select>
+                    &nbsp;<input name="source address" type="text" class="form-text" value="destination address goes here" maxlength="55" />
+                 </div>
+               </div> 
+
+
+               <div id="formLineContainer">
+                   <div style="padding-bottom:10px"></div>
+			     <div class="fieldnames"> Port                 </div>
+                
+                 <div class="formfieldContainer">
+                 										
+
+                   <select name="Port" class="default" tabindex="5">
+					 <option value="">Equal To</option>
+					 <option value="Any">Less Than</option>
+				   </select>
+                   &nbsp;<input type="number" name="sourceAddress" min="1" max="5" class="form-text" value="position toggle fields" maxlength="55" />                 
+               </div> 
+                <div style="padding-bottom:30px"></div>
+               <div id="formSubmitContainer">
+				 <img src="images/applyrule.png" width="140" height="32" alt="Apply Rule" />
+                 <img src="images/cancelrule.png" width="140" height="32" />               </div> 
+               </div>                		
+		
+        
+        
+        	
+    </div><!--end addACL -->
+ 
+
+
+
+		</div>	
+	</div>
+  </div><!--end overlay container -->
+</div>
+</div>
+</body>
+</html>

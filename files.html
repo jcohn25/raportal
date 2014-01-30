@@ -1,0 +1,183 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Root Axcess - Files</title>
+
+<link type="text/css" href="tools/css/ui-lightness/jquery-ui-1.8.18.custom.css" rel="stylesheet" />	
+  <link rel="stylesheet" href="tools/css/dropkick.css" type="text/css">
+<link rel="stylesheet" href="tools/css/jquery.superbox.css" type="text/css" media="all" />
+<link rel="stylesheet" href="tools/css/main.css" type="text/css" media="all" />
+
+
+
+<script type="text/javascript" src="tools/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="tools/js/jquery-ui-1.8.18.custom.min.js"></script>
+<script type="text/javascript" src="tools/js/jquery.nestedAccordion.js"></script>
+<script src="tools/js/jquery.dropkick-1.0.0.js" type="text/javascript" charset="utf-8"></script>
+<script src="tools/js/jquery-min.js" type="text/javascript" charset="utf-8"></script>
+<script src="tools/js/jquery.superbox-min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript" charset="utf-8">
+    $(function () {
+      $('.default').dropkick();
+
+      $('.black').dropkick({
+        theme : 'black'
+      });
+
+      $('.change').dropkick({
+        change: function (value, label) {
+          alert('You picked: ' + label + ':' + value);
+        }
+      });
+
+      $('.existing_event').dropkick({
+        change: function () {
+          $(this).change();
+        }
+      });
+
+      $('.custom_theme').dropkick({
+        theme: 'black',
+        change: function (value, label) {
+          $(this).dropkick('theme', value);
+        }
+      });
+
+      $('.dk_container').first().focus();
+    });
+  </script>
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+$("html").addClass("js");
+$.fn.accordion.defaults.container = false; 
+$(function() {
+  $("#acc3").accordion({initShow : "#current"});
+  $("#acc1").accordion({
+      el: ".h", 
+      head: "h4, h5", 
+      next: "div", 
+      initShow : "div.outer:eq(1)"
+  });
+  $("#acc2").accordion({
+      obj: "div", 
+      wrapper: "div", 
+      el: ".h", 
+      head: "h4, h5", 
+      next: "div", 
+      showMethod: "slideFadeDown",
+      hideMethod: "slideFadeUp",
+      initShow : "div.shown"
+    });
+  $("html").removeClass("js");
+});
+//--><!]]>
+</script>
+<!--<![endif]-->
+		
+<script type="text/javascript">
+			$(function(){
+
+				
+				// Tabs
+				$('#tabs').tabs();
+	
+
+				
+				
+				// Progressbar
+				$("#progressbar").progressbar({
+					value: 20 
+				});
+				
+				
+				
+			});
+		</script>
+        
+        <script type="text/javascript">
+
+        
+$(function(){
+	$.superbox();
+});
+	</script>
+
+
+</head>
+
+<body>
+
+<div id="pageContent"> 
+  <div id="headerContainer">
+    	<div id="headerLogoContainer">
+         <img src="images/rootAxcessLogo.gif" alt="Root Axcess, Enterprise Cloud Solutions" />        </div>
+       	  <div id="headerNavigationContainer">
+          		<div id="mainNav"> 
+                	<ul>
+                    <li><a href="welcome.html">Home</a></li>
+                    <li><a href="clouds.html">Clouds</a></li>
+                    <li class="special"><a href="files.html">Files</a></li>
+                    <li><a href="reports.html">Reports</a></li>
+                    <li><a href="account.html">Account</a></li>
+                    <li><a href="https://admin.rootaxcesscloud.com/cloudui/app/support.htm" target="_blank">Support</a></li>
+                    </ul>
+                </div> 
+          </div>
+  </div>
+<div id="subHeaderContainer"> 
+           <div class="crumbTrailContainer"><a href="#">Root Axcess Home</a> • <a href="#">Files</a><a href="#"></a></div>
+      <div class="loginContainer">hi there i'm a login</div>
+  </div>
+
+	
+<div id="networkHeader"> 
+    	<div class="content"><img src="images/rootaccesPageTitleFiles.png" alt="Cloud" width="300" height="60" /><br />
+    Something about managing files can go here. </div>
+        <div class="iconContainer">
+         <ul>
+   	
+
+   		<li>
+		  <a id="addFiles" title="Add Server" href="addAccount.html" rel="superbox[iframe][800x500]">Add Server</a>   		</li>
+  
+   		
+    </ul>
+		</div>
+        
+  </div>
+<!--closes network header -->
+    
+    
+ <div id="networkGuts"> 
+   		  <div class="leftNav">
+          		<div class="leftNavGuts">
+           		  <p>Unlinked header</p>
+                  <ul>
+           		<li> <a href="#">linked subcontent</a></li>
+           		<li> <a href="#">linked subcontent</a></li>
+           		<li> <a href="#">linked subcontent</a></li>
+           		<li> <a href="#">linked subcontent</a></li>
+                 </ul>
+                 <p>&nbsp; </p>
+
+           		  <p>Unlinked heade</p>
+                   <ul>
+           		<li> <a href="#">linked subcontent</a></li>
+                 
+                          
+                 </ul>
+                  <p>&nbsp; </p>
+
+                  
+          		</div>
+          </div>
+
+
+  </div>
+</div>
+
+</body>
+</html>

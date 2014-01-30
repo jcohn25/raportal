@@ -1,0 +1,24 @@
+.ip_container {
+  border: 1px inset #999;
+  line-height: 20px;
+	height: 20px;
+	padding: 2px 0px 2px 10px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px solid #CCC;
+	background-color: #FAFAFA;
+}
+.ip_octet {
+  border: 0;
+	text-align: center;
+	width: 2em;
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	background-color: #FAFAFA;
+	text-shadow: white 1px 1px 0;
+	color: #333;
+}
+.ip_cidr {
+  width: 1.5em;
+}
